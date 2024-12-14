@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Data based test - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../concepts/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../conceptual-runenvironment/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#databased-testcase" class="nav-link">Databased Testcase</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#data-loop-input-teststep" class="nav-link">Data Loop Input Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-a-query-based-valuelist-input" class="nav-link">Create a Query-based valuelist Input</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="databased-testcase">Databased Testcase</h1>
+<p>A databased testcase runs its teststeps repeatedly with varying predefined data in a table. The idea is to assess your service under test with different data and verify the results later in a table.</p>
+<p>This kind of data-based tests can be achieved with the Testcase type <strong>Databased Testcase</strong>.</p>
+<p>See the step-by-step tutorial <a href="../task-createdatabasedtestcase/">Create a Databased Testcase</a> for more information how to perform this task.</p>
+<p>A Databased Testcase is a specific <strong>Testcase</strong> type that you create in the <a href="../views-repositories-testsets/#testcase-list-view">View Testcase List</a>. It uses the following elements:</p>
+<p>-A Data Loop Input Teststep that contains the data to iterate over</p>
+<ul>
+<li>
+<p>A list of Teststeps that perform the actual service tests with data from the Data Loop Input Teststep</p>
+</li>
+<li>
+<p>A Data Loop Result Teststep that write variable values into a result table
+<img alt="Screenshot for a conceptual overview of the Databased Testcase elements" src="../storage/DatabasedTestcaseConceptualOverview.png" /></p>
+</li>
+</ul>
+<h2 id="data-loop-input-teststep">Data Loop Input Teststep</h2>
+<p>This teststep is meant to provide the date for the Data Loop. Depending on our edition (Community Edition or Standard Edition) you have two options to provide your tabular data:</p>
+<ul>
+<li>
+<p>A Manual Table Editor</p>
+</li>
+<li>
+<p>A configurable CSV file input</p>
+</li>
+<li>
+<p>A Query input, see <a href="#create-a-query-based-valuelist-input">Create a Query-based Valuelist Input</a></p>
+</li>
+</ul>
+<p>All of these options foresee a mapping between columns of your table and a variable in your Test hierarchy, as you can see in the following screenshot:</p>
+<p><img alt="Screenshot databased testcase data loop input teststep in conceptual overview" src="../storage/DatabasedTestcaseDataLoopInputTeststepConceptualOverview.png" /></p>
+<ul>
+<li>
+<p>We define a number of columns for our table</p>
+</li>
+<li>
+<p>We link these columns to variables in our test hierarchy</p>
+</li>
+<li>
+<p>We enter the data (in a manual table) or import the data (and import the column information) from a CSV file</p>
+</li>
+<li>
+<p>When we run this Teststep, the current row data will be read and the information in the row cells will be used to update the referenced variable value</p>
+</li>
+<li>
+<p>Any subsequent Teststep will be able to access the current variable value with the <em>$(Holder.Name)</em>  notation</p>
+</li>
+</ul>
+<h2 id="create-a-query-based-valuelist-input">Create a Query-based valuelist Input</h2>
+<p>A query-based valuelist input allows you to use a query language like XQuery, XPath or JSONPath to provide variables values from an HTTP/SOAP Teststep response and loop over each element in your Databased Testcase.</p>
+<p>A query-based valuelist input provides a powerful option to read a list of elements from an HTTP/SOAP Teststep reponse and
+delivers the top level child elments as columns in table. This is the input for our Databased Testcase Run Loop.</p>
+<p>The following image shows a sample JSON- response with a number of <em>invoice</em> elements that hold sub elements. We want to iterate over these invoice elements and use the sub elements as columns in an input table, as you would do use a CSV file or a manual table.</p>
+<h3 id="use-case-of-a-query-based-valuelist-input">Use case of a query-based valuelist input</h3>
+<p>We will illustrate this with the following use case, as some transformations would apply when querying JSON-Elements or XML-Elements and provide them as  flat table with columns and rows. Let's test a REST-service that exposes two routes:</p>
+<ul>
+<li>
+<p>A route/ressource <b>hosturl/api/json/invoices</b> that returns a list of available invoices with some metadata such as invoice number and company</p>
+</li>
+<li>
+<p>A  route/ressource <b>hosturl/api/json/invoiceNumber/invoicenumber</b> that returns the invoie document with detailed invoice data such as amount and term</p>
+</li>
+</ul>
+<p>We want to verify that each invoice returned from the first route can be received in the second route and want to make sure that the information on the invoice-element corresponds to the metadata returned in the JSON-element.</p>
+<p><img alt="Screenshot with HTTP Request and JSOn-Response in a visual tree view" src="../storage/DatabasedTestcaseQuerybaseedInvoicelist.png" /></p>
+<p>Each element is a JSON-Dictionary that holds three key/value-pairs, the webservice call would return 10 invoice elements:</p>
+<ul>
+<li>
+<p>companyname</p>
+</li>
+<li>
+<p>invoicenumber</p>
+</li>
+<li>
+<p>projecttitle</p>
+</li>
+</ul>
+<p>We will apply the following JSONPath to extract the information for each Dictionary in the list and create an Input table for our Databased-Testcase:</p>
+<p>JSONPath:  <em>$.invoiceElements.*</em></p>
+<p><img alt="Screenshot resulting input table for Databased Teststep with column identification based on key/value-airs." src="../storage/DatabasedTestcaseQuerbaseInputtable.png" /></p>
+<p>Here we go. We have the input for the Databased Testcase Run Loop. Each column entry is automatically assigned to a Variable that has been created for you.
+               You may use this in call of the second webservice in such a way:
+<img alt="Screenshot Teststep in Data Loop with resolved Variable" src="../storage/DatabasedTestcaseQuerybasedVariable.png" /></p>
+<h3 id="databased-testcase-run-details">Databased Testcase Run Details</h3>
+<p>A Databased Testcase run performs the following logic:</p>
+<ul>
+<li>
+<p>All Teststeps before the the <b>Data Loop Input Teststep</b> will run once</p>
+</li>
+<li>
+<p>All Teststeps between the <b>Data Loop Input Teststep</b> and the <b>Data Loop Result Teststep</b> will run for each row in the Data Loop Input Teststep</p>
+</li>
+<li>
+<p>Each Teststep defines which of the variables it uses, you may use them in the URL as parameter values or in a JSON or SOAP body</p>
+</li>
+<li>
+<p>The Data Loop Result Teststep is the last Teststep that is run repeatedlly</p>
+</li>
+<li>
+<p>All Teststeps after the <b>Data Loop Result Teststep</b> will run once</p>
+</li>
+</ul>
+<h3 id="data-loop-result-teststep">Data Loop Result Teststep</h3>
+<p>This Teststep gives you the option to write any Variable values in the <b>Test definition hierarchy</b> to a result table. This result table is stored internally and can be exported to a CSV-file.
+                You can append new results to the end of the table with new test runs or simply override any existing entry with the option <b>Append to end of file</b>. </p>
+<p><img alt="Screenshot Databased Testcase DataLoopResultTeststep with conceptual overview" src="../storage/DatabasedTestcaseDataLoopResultTeststepConceptualOverview.png" /></p>
+<p>See the step-by-step tutorial <a href="../task-createdatabasedtestcase/">Create a Databased Testcase</a> for more information how to perform this task.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

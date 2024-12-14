@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Test hierarchy views - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../conceptual-runenvironment/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../views-teststeps/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#testdefinition-hierarchy" class="nav-link">Testdefinition hierarchy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#repository-list-view" class="nav-link">Repository list view</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#testset-list-view" class="nav-link">Testset list view</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#testcase-list-view" class="nav-link">Testcase list view</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#special-considerations" class="nav-link">Special considerations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#teststep-list-view" class="nav-link">Teststep list view</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="testdefinition-hierarchy">Testdefinition hierarchy</h1>
+<p>You manage and maintain your test definition hierarchy in four views, where two of them are located inthe sidebar:</p>
+<p><img alt="Screenshot sidebar test definition&quot;" src="../storage/SidebarTestdefinition.png" /></p>
+<p>The sidebar includes two followinglist view:</p>
+<ul>
+<li>
+<p>Repository list view</p>
+</li>
+<li>
+<p>Testset list view</p>
+</li>
+</ul>
+<p>The sidebar appearance can be changed with the following toggles</p>
+<ul>
+<li>
+<p><strong>Show/hide sidebar</strong></p>
+</li>
+<li>
+<p><strong>Show Testsets</strong> on: will show the <a href="#testset-list-view">Testsets List View</a>, off: will not display them.</p>
+</li>
+</ul>
+<h1 id="repository-list-view">Repository list view</h1>
+<p>A repository is an organizational bucket where you can enter your testsets and testcases. All your definitions are synchronized on your iCloud storage across your MacOS-devices.</p>
+<p>This view displays all repositories and provides commands to create, edit, delete and test run commands.
+This view is intended to edit in the repository list or run a repository-based test and view the unterlying testsets at the same time. You
+Commands illustrated on the left side from top to down without the view toggle commented in the previous section</p>
+<p><img alt="Repository List View&quot;" src="../storage/Repositorylistview.png" /></p>
+<p>We follow the icons from left to right and list the views from top to down.</p>
+<ul>
+<li>
+<p><strong>Create new repository</strong> adds a new repository</p>
+</li>
+<li>
+<p><strong>enable/disable repository for test run</strong> includes or excludes a repository for test run or execution run</p>
+</li>
+<li>
+<p><strong>Delete all selected repositories</strong> performs the deletion</p>
+</li>
+<li>
+<p><strong>Edit repository name</strong> allows to rename a single selected repository</p>
+</li>
+<li>
+<p><strong>move repository up</strong> and <strong>move repository down</strong> has impact on the list order and on the order they are invoked for test runs and execution runs</p>
+</li>
+<li>
+<p><strong>instant run tests in repository</strong> starts a test run that walks through alls testsets and their testcase in the order they are displayed in the list views. </p>
+</li>
+<li>
+<p><strong>run test execution for repository</strong> starts a test run whose results are persisted and visible. See <a href="../concepts/">Test run</a>.This starts a background test run that walks through alls testsets and their testcase in the order they are displayed in the list views. </p>
+</li>
+<li>
+<p><strong>instant test run status for repository</strong> and <strong>instant test run status for testset</strong> show the <strong>instant test run status</strong>. The test results are not persisted.</p>
+</li>
+<li>
+<p><strong>Search input field</strong> filters the repositories based on the input - input must be contained, case insensitive</p>
+</li>
+<li>
+<p><strong>selected repository</strong> defines the root element for the <strong>Testset List View</strong></p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+<hr />
+<h1 id="testset-list-view">Testset list view</h1>
+<p>The Testset list view is only visible, if the toggle <strong>Show testsets</strong> is activated</p>
+<p>Repositories contain Testsets. They are represented in the view above with a folder icon. All command that you can perform on testsets are available through a context menu.</p>
+<p><img alt="Testset list view" src="../storage/Testsetlistview.png" /></p>
+<ul>
+<li>
+<p><strong>Create new Testset</strong> will open a dialog to create a new Testset</p>
+</li>
+<li>
+<p><strong>Delete all selected X testset(s)</strong> will prompt you to perform the <strong>undoable</strong> deletion.</p>
+</li>
+<li>
+<p><strong>Rename selected Testset</strong> will open a dialog to enter the new name.</p>
+</li>
+<li>
+<p><strong>export selected Testsets to JSON-file</strong> will create a JSON-representation of the Testset list with all underlying data. See <a href="../collaborate/">Import and Export your Test definitions</a>.</p>
+</li>
+<li>
+<p><strong>import Testsets from JSON-file</strong> will create new Testsets from a JSON-representation with all underlying data.
+see <a href="../collaborate/">Import and Export your Test definitions</a></p>
+</li>
+<li>
+<p><strong>Toggle enabled/disabled for test run</strong>  includes or excludes a Testset for a test run.</p>
+</li>
+<li>
+<p><strong>Instantly run Testsets</strong>  starts a test run that walks through the testcases of the selected testset in the order they are displayed in the list views. The results are not persisted.</p>
+</li>
+<li>
+<p><strong>instant test run status</strong> for repository and <strong>instant test run status for testset</strong>  show the <strong>instant test run status</strong>. The test results are not persisted.</p>
+</li>
+<li>
+<p><strong>move selected Testset(s) up</strong> will change the order in th Testset list.</p>
+</li>
+<li>
+<p><strong>move selected Testset(s) down</strong>  will change the order in th Testset list.</p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+<h1 id="testcase-list-view">Testcase list view</h1>
+<p>This view displays the testcases of the selected testset</p>
+<p><img alt="Testcase list view" src="../storage/Testcaselistview.png" /></p>
+<p>A testcase includes a number of tetsteps to test a specific functionality.</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li>
+<p><strong>Name of parent repository</strong> displays the current repository selection</p>
+</li>
+<li>
+<p><strong>Name of parent testset</strong> displays the current testset selection</p>
+</li>
+<li>
+<p><strong>create new data-based testcase</strong> sets up a base testcase with an input data teststep and a result teststep</p>
+</li>
+<li>
+<p><strong>create new testcase</strong></p>
+</li>
+<li>
+<p><strong>delete</strong> all selected testcases</p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+<h2 id="special-considerations">Special considerations</h2>
+<p>Each testcase is displayed with an <strong>icon</strong> leading its <strong>name</strong>. An icon with a dark fill color indicates a testcase with teststeps included, an icon without fill color indicates an empty testcase
+-  <strong>move up</strong> and <strong>move down</strong> has impact on the list order and on the order they are invoked for test runs. The order is intended to help you organize your testcases.</p>
+<ul>
+<li>
+<p><strong>enable/disable</strong> includes or excludes a testcase on a test run</p>
+</li>
+<li>
+<p><strong>run test</strong> starts a test run that walks through all selected testcases in the displayed order, or all testcases, when no testcase is selected.</p>
+</li>
+<li>
+<p><strong>testcase list testrun result status</strong> displays the aggregrated test run result status of all executed testcases.</p>
+</li>
+<li>
+<p><strong>testcase testrun result status</strong> displays the test run result status of an individual testcase.</p>
+</li>
+<li>
+<p><strong>import testcases from JSON</strong> loads testcase information from a JSON file</p>
+</li>
+<li>
+<p><strong>export selected testcases as JSON</strong> creates a JSON representation of the selected testcases and stores them to a file</p>
+</li>
+<li>
+<p><strong>rename</strong> selected testcase</p>
+</li>
+</ul>
+<h1 id="teststep-list-view">Teststep list view</h1>
+<p>This view displays the teststeps of the selected testcase</p>
+<p><img alt="Teststep list view" src="../storage/Teststeplistview.png" /></p>
+<p>A teststep performs - depending on the teststep type a type-specific task within a testcase.</p>
+<h3 id="commands_1">Commands</h3>
+<ul>
+<li>
+<p><strong>Create SOAP Teststep</strong> opens a dialog to specify the WSDL and the operation that you want to test. See tutorial <a href="../task-create-testdefinition/#create-a-soap-teststep">Create SOAP Teststep</a></p>
+</li>
+<li>
+<p><strong>Create HTTP Teststep</strong> creates a teststep for HTTP requests including JSON body. See tutorial <a href="../task-create-testdefinition/#create-an-http-teststep">Create HTTP Teststep</a></p>
+</li>
+<li>
+<p><strong>Create Datatransfer Teststep</strong> creates a teststep with an empty list of Teststep value providers such as XPath and XQuery value providers. See <a href="../teststepconfigviews/#datatransfer-teststep">Datatransfer Teststep</a></p>
+</li>
+<li>
+<p><strong>Create RandomizeTeststep</strong> creates a teststep with an empty list of random value providers based on concatenated strings or uuids. See <a href="../views-teststeps/#view-randomizeteststep">View Randomizeteststep</a></p>
+</li>
+<li>
+<p><strong>Create Randomized ValuelistTeststep</strong> creates a teststep that reads a CSV file and allows to configure output columns and their formatting. See <a href="../views-teststeps/#randomizedvaluelist-teststep-view">Randomizedvaluelist Teststep View</a>.</p>
+</li>
+<li>
+<p><strong>Create Manual Randomized ValuelistTeststep</strong> creates a teststep that let you edit a table and allows to configure output columns and their formatting. see <a href="../views-teststeps/#manual-randomizedvaluelistteststep-view">Manual RandomizedvaluelistTeststep View</a>.</p>
+</li>
+<li>
+<p>Each Teststep type is displayed with its name and a specific <strong>icon</strong> to distinguish the <strong>teststep type.</strong></p>
+</li>
+<li>
+<p><strong>delete</strong> all selected teststeps</p>
+</li>
+<li>
+<p><strong>rename</strong> selected teststep</p>
+</li>
+<li>
+<p><strong>move up</strong> and <strong>move down</strong> has impact on the list order and on the order they are invoked for test runs. The order is intended to define which teststep needs the input of another teststep.</p>
+</li>
+<li>
+<p><strong>enable/disable</strong> includes or excludes a teststep on a test run</p>
+</li>
+<li>
+<p><strong>run test</strong> starts a test run that walks through all selected teststep in the displayed order, or all teststeps, when no teststep is selected.</p>
+</li>
+<li>
+<p><strong>teststep list testrun result status</strong> displays the aggregrated test run result status of all executed teststeps.</p>
+</li>
+<li>
+<p><strong>teststep testrun result status</strong> displays the test run result status of an individual teststep.</p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

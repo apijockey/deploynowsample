@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Release notes - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../collaborate/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../gettingstarted/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#release-notes" class="nav-link">Release Notes</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#version-150-024-01-20" class="nav-link">Version 1.5.0 (024-01-20)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-140-2023-11-18" class="nav-link">Version 1.4.0 (2023-11-18)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-132-2023-10-16" class="nav-link">Version 1.3.2 (2023-10-16)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-131-2023-10-08" class="nav-link">Version 1.3.1 (2023-10-08)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-130-2023-08-18" class="nav-link">Version 1.3.0 (2023-08-18)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-123-2023-07-16" class="nav-link">Version 1.2.3 (2023-07-16)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-122-2023-07-04" class="nav-link">Version 1.2.2 (2023-07-04)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-121-2023-06-15" class="nav-link">Version 1.2.1 (2023-06-15)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-120-2023-06-17" class="nav-link">Version 1.2.0 (2023-06-17)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-110-2023-03-11" class="nav-link">Version 1.1.0 (2023-03-11)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-102-2022-11-14" class="nav-link">Version 1.0.2 (2022-11-14)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-102-2022-10-09" class="nav-link">Version 1.0.2 (2022-10-09)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-101-2022-09-19" class="nav-link">Version 1.0.1 (2022-09-19)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-11-2022-09-06" class="nav-link">Version 1.1 (2022-09-06)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#version-10-2022-09-06" class="nav-link">Version 1.0 (2022-09-06)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="release-notes">Release Notes</h1>
+<p>These release notes cover release information for APIJockey TEST, which is available in the Apple Store for MacOS and also available as a download on <a href="https://apijockey.com">APIJockey.com</a></p>
+<h3 id="version-160-2024-03-15">Version 1.6.0 (2024-03-15)</h3>
+<p>This major update contains</p>
+<ul>
+<li>Display images and PDF-files in response view of HTTP teststeps</li>
+<li>AI-based <a href="views-imageassertioneditor.html">Image assertions</a> on text and barcodes within images in the <a href="views-httpteststep-assertionlist.html">HTTP Teststep assertion list </a></li>
+<li><a href="views-pdfassertioneditor.html">PDF assertions</a> to test for expected text (on pages or the whole document) and PDF document attributes</li>
+<li>A JSON Tree Editor for HTTP Teststep POST and PUT requests</li>
+<li>A JSON Tree Viewer for HTTP Teststep Response</li>
+<li>A new Variable selection dialog to use in the SOAP and JSON Request tree editor</li>
+<li>Databased Testcases support JSONPath, XQuery and XPath to create input data from Teststeps</li>
+<li>Bugfix on the structured URL request editor (HTTP Teststep) to resolve characters in URLs appropriately</li>
+<li>Reworked Testexecution views to display results of historical persisted test runs.</li>
+<li>Reworked Databased input and result teststep tabular data grid view for better performance on large data sets.</li>
+<li>The paying Backup and Share functionality is replaced by a personal cloud functionality, which is free of charges.</li>
+</ul>
+<h2 id="version-150-024-01-20">Version 1.5.0 (024-01-20)</h2>
+<p>This major update contains</p>
+<ul>
+<li>We introduce a cloud-based - paying - solution to <a href ="BackupAndShare.html">Backup and share your Repositories</a></li>
+<li>
+<p>We extended the WSDL import handler to support <strong>import of WSDL definitions</strong> within a WSDL. Example:</p>
+<p><em><textarea rows="4" cols="120" style="border:none;">
+<wsdl:import
+location="https://examplewebservice.com/services/Webservice?wsdl=v1/wsdl/ExampleBaseService.wsdl
+namespace="http://webserviceexample.com/namespace">
+</wsdl:import>
+</textarea></em></p>
+</li>
+<li>
+<p>XML tree editors allow you to select variables as element contents</p>
+</li>
+</ul>
+<h2 id="version-140-2023-11-18">Version 1.4.0 (2023-11-18)</h2>
+<p>This major update contains</p>
+<ul>
+<li>A new support for <a href="importExport.html">import and export of Testcases, Testsets and Repositories</a></li>
+<li>A <a href="importExport.html#sampleexportscriptsoapui">Transformation sample script</a> to export SOAP tests from SoapUI and ReadyAPI</li>
+<li>Datatransfer Teststeps provide a new <a href="./xpathvalueprovider.html#textvalueprovider">TextValueProvider</a></li>
+<li>The HTTP and SOAP Teststep authentication config view allows to set individual prefix names instead of the hardcoded token <em>Bearer</em></li>
+</ul>
+<h2 id="version-132-2023-10-16">Version 1.3.2 (2023-10-16)</h2>
+<ul>
+<li>Bugfix in HTTPRequestEditor and updating logic when selecting teststeps</li>
+</ul>
+<h2 id="version-131-2023-10-08">Version 1.3.1 (2023-10-08)</h2>
+<ul>
+<li>HTTPTeststeps support XML  and XML/SOAP contents</li>
+<li>Support for SOAP 1.2 added</li>
+<li>Manual validation and pretty-print functionality for HTTPTeststeps and SOAPTeststeps (request and response) added</li>
+<li>Copy and paste error in text editor fixed</li>
+</ul>
+<h2 id="version-130-2023-08-18">Version 1.3.0 (2023-08-18)</h2>
+<p>This major update contains</p>
+<ul>
+<li>Support for <a href="conceptual-runenvironment.html">Run Environments</a> in HTTP Teststeps, SOAP Teststeps and persisted Test executions</li>
+<li>Create a set of rows in a <a href="views-randomizedmanualvaluelistteststep.html">Manual RandomizedvaluelistTeststep View</a></li>
+<li>Improved handling of date representation in CSV files with preview in <a href="./views-randomizedvaluelistteststep.html">View RandomizedValuelistTeststep</a> and when you <a href="./task-create-DatabasedTestcase.html">Create DatabasedTestcase</a></li>
+</ul>
+<h2 id="version-123-2023-07-16">Version 1.2.3 (2023-07-16)</h2>
+<ul>
+<li>A SOAP response view provides a XML tree view with xpath information that can be selected</li>
+<li>several minor bug fixes for the syntax highlighting text editor (JSON, SOAP, XPATH)</li>
+</ul>
+<h2 id="version-122-2023-07-04">Version 1.2.2 (2023-07-04)</h2>
+<p>This update contains</p>
+<ul>
+<li>Import and export of variables, see <a href="./views-variables.html#commands">Variables Commands</a></li>
+<li>Support for light/dark mode changes in the editor</li>
+<li>New JSONPath assertions for JSON dictionary arrays, see <a href="./views-jsonpathassertioneditor.html#dictionaryarray">View JSONPath assertion editor</a></li>
+<li>Support for selections in readonly text view and pasteboard support</li>
+</ul>
+<h2 id="version-121-2023-06-15">Version 1.2.1 (2023-06-15)</h2>
+<p>This update contains </p>
+<ul>
+<li>bugfixes for the HTTPTeststep Details view</li>
+<li>minor improvements for the HTTPTeststep Execution view</li>
+</ul>
+<h2 id="version-120-2023-06-17">Version 1.2.0 (2023-06-17)</h2>
+<p>This major update contains</p>
+<ul>
+<li>Create data-based test cases from CSV files or based on manual tables.</li>
+<li>Store your test case results in external tables and review results  in any spreadsheet application</li>
+<li>Select your XML-elements from your SOAP-Response to get the underlying XPath</li>
+</ul>
+<h2 id="version-110-2023-03-11">Version 1.1.0 (2023-03-11)</h2>
+<p>This major update contains</p>
+<ul>
+<li>Create a Randomized List Teststep with a Manual Table editor</li>
+<li>Create a Randomized List Teststep with CSV Import</li>
+</ul>
+<h2 id="version-102-2022-11-14">Version 1.0.2 (2022-11-14)</h2>
+<ul>
+<li>Support for XQuery</li>
+<li>Support for HTTP Assertions</li>
+</ul>
+<h2 id="version-102-2022-10-09">Version 1.0.2 (2022-10-09)</h2>
+<p>This update contains bugfixes</p>
+<h2 id="version-101-2022-09-19">Version 1.0.1 (2022-09-19)</h2>
+<p>This update contains bugfixes</p>
+<h2 id="version-11-2022-09-06">Version 1.1 (2022-09-06)</h2>
+<p>This update contains bugfixes</p>
+<ul>
+<li>SOAP Teststeps</li>
+<li>HTTP Teststep</li>
+<li>Randomize Value Teststep</li>
+<li>Datatransfer Teststep</li>
+<li>Test executions (Report View)</li>
+</ul>
+<h2 id="version-10-2022-09-06">Version 1.0 (2022-09-06)</h2>
+<p>First Release</p>
+<ul>
+<li>Test hierarchies with Repositories/Testsets/Testcases and Teststeps</li>
+<li>Testexecutions for reporting in the Standard Edition</li>
+<li>SOAP Teststeps</li>
+<li>HTTP Teststep</li>
+<li>Variables</li>
+<li>Randomize Value Teststep</li>
+<li>Datatransfer Teststep</li>
+<li>Test executions (Report View)</li>
+<li>JSONPath support</li>
+<li>XPath support</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

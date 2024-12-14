@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Create databased testcase - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../task-create-testdefinition/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../task-create-valuelist-teststeps/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#create-a-databased-testcase" class="nav-link">Create a Databased Testcase</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#create-the-test-definition-hierarchy" class="nav-link">Create the Test Definition Hierarchy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-1-create-a-databased-testcase" class="nav-link">Step 1: Create a Databased Testcase</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-2-create-a-http-teststep" class="nav-link">Step 2: Create a HTTP Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-3-edit-the-data-loop-input-teststep" class="nav-link">Step 3: Edit the Data Loop Input Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-4-enter-the-input-teststep-data-with-a-manal-list" class="nav-link">Step 4: Enter the Input teststep data with a manal list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-5-edit-the-url-and-run-the-search-itunes-http-teststep" class="nav-link">Step 5: Edit the URL and run the Search iTunes HTTP Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-6-edit-and-run-the-dataloop-result-teststep" class="nav-link">Step 6: Edit and run the DataLoop Result Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#run-the-databased-testcase-and-the-dataloopresultteststep" class="nav-link">Run the Databased Testcase and the DataLoopResultTeststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="create-a-databased-testcase">Create a Databased Testcase</h1>
+<p>This walkthrough shows you, how to create a Databased Testcase with a manual input table. You will perform the following steps:</p>
+<ul>
+<li>use and edit manual input table</li>
+<li>create a simple REST-Service call</li>
+<li>create variable transfers for the result teststep</li>
+<li>download the result table</li>
+</ul>
+<h2 id="create-the-test-definition-hierarchy">Create the Test Definition Hierarchy</h2>
+<ul>
+<li><a href="../task-create-testdefinition/#create-a-repository">Create a Repository</a></li>
+<li><a href="../task-create-testdefinition/#create-testset">Create a Testset</a></li>
+<li>You have selected a testset</li>
+</ul>
+<h2 id="step-1-create-a-databased-testcase">Step 1: Create a Databased Testcase</h2>
+<p><img alt="Screenshot create Databased Testcase Button" src="../storage/CreateDatabasedTestcase.png" /> </p>
+<p>Select the button <strong>create new Databased Testcase</strong></p>
+<p>This opens a dialog that allows you to enter the name of the teststep. You can choose to enter this name at any point later in time.</p>
+<p>(storage/DialogNewDatabasedTestcase.</p>
+<p>When you confirm with <strong>OK</strong> the dialog disappears and creates a new entry in the testcase list. Cancel dismisses without creating the testcase.</p>
+<hr />
+<p>When you select the new testcase, you will see two teststeps that were created automatically for you</p>
+<p>(storage/DatabasedTestcaseAftercreation.)/&gt;</p>
+<ul>
+<li>The Data Loop Input Teststep that you will use later to enter data.</li>
+<li>The Data Loop Result Teststep that you will use later to set result values.</li>
+</ul>
+<h2 id="step-2-create-a-http-teststep">Step 2: Create a HTTP Teststep</h2>
+<p>We will create a new HTTP Teststep</p>
+<p><img alt="Screenshot teststep list with Pointer on button to create new HTTP Teststep" src="../storage/DatabasedTestcaseCreateNewHTTPteststep.png" /> </p>
+<p>Click on the button <strong>Create new HTTP teststep</strong>. This will open a dialog where you enter the name <strong>Search iTunes</strong> and confirm with <strong>OK</strong></p>
+<p><img alt="Screenshot Dialog new HTTP Teststep" src="../storage/DatabasedTestcaseDialogNewHTTPTeststep.png" /></p>
+<p>This has created a new HTTP Teststep that will appear at the top of the list..
+We will configure this teststep further down in the tutorial.</p>
+<p>The Databased Testcase runs all teststeps between the input teststep and output testsep in a loop that is determined by the  number of elements in the <strong>Input Teststep</strong> and limited to the position of the <strong>Result Teststep</strong> where you may document the results in an exportable table.</p>
+<p>This means, we want the new Teststep to be between the <strong>Input Teststep</strong> and the <strong>Result Teststep</strong>. The following screenshot shows how you can rearrange selected teststeps with the <strong>arrow</strong> buttons to move the <strong>Search iTunes</strong> HTTP Teststep between <strong>Input Testsstep</strong> and <strong>Result Teststep</strong></p>
+<p><img alt="Screenshot Databased Testcase teststep list with new HTTP teststep at the beginning of the list" src="../storage/DatebasedTestcaseTeststeplistAfterHTTPTeststepCreation.png" /></p>
+<p>We will use the real-life iTunes Search API.</p>
+<p>The documentation of this API is provided here on <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html">iTunes Search API Documentation Archive</a></p>
+<p>Please don't understand these screenshots as any kind of endorsement from Apple® for this software.</p>
+<p>You may use the following request in an application that wants to retrieve a list of apps. We will use one sample request from the iTuneSearchAPI documentation, and include a limit of five results:</br>
+To search for applications titled “Yelp” and return only the results from th e United States iTunes Store, use the following URL: </p>
+<p><a href="https://itunes.apple.com/search?term=yelp&amp;country=us&amp;entity=software&amp;limit=5">https://itunes.apple.com/search?term=yelp&amp;country=us&amp;entity=software&amp;limit=5</a></p>
+<p>When you use the same request with the same parameters, you may more easily follow the instructions and assertion results used in this tutorial. So even if your favorite app isn't the one mentioned above it's worth using it for this tutorial.</p>
+<h2 id="step-3-edit-the-data-loop-input-teststep">Step 3: Edit the Data Loop Input Teststep</h2>
+<p>We want to demonstrate the Databased Testcase by providing variations of:</p>
+<ul>
+<li>Limit 1, 2, 3 (As the intention of the Search API is not to help out with our tutorial, we want to limit the search results)</li>
+<li>Country (US, Canada)</li>
+<li>Software (Yelp, Apple)</li>
+</ul>
+<p>These variations are sufficient to demonstrate how the Databased Testcase works.</p>
+<h2 id="step-4-enter-the-input-teststep-data-with-a-manal-list">Step 4: Enter the Input teststep data with a manal list</h2>
+<p>The APIJockey TEST Community Edition allows you to enter test data in an internal table editor. The Apple Appstore Edition allows you the import a CSV-file. As we have few elements only, we will use the manual table editor.
+Select the Teststep <strong>Data Loop Input Teststep</strong> and make sure your App shows the same view as in the screenshot below:</p>
+<p><img alt="Screenshot Databased Testcase Data Loop Input Teststep" src="../storage/DatabasedTestcaseDataLoopInputteststep.png" /> </p>
+<p>We need to see:</p>
+<ul>
+<li>The variables of the testcase</li>
+<li>The selected Databased Testcase</li>
+<li>The selected Data Loop Input Teststep</li>
+<li>The (empty) columns of the inline table</li>
+<li>The (empty) rows of the inline table</li>
+</ul>
+<p>We will create a table with the following columns, according to the variations for the URL that we want to demonstrate:</p>
+<ul>
+<li>Limit</li>
+<li>Country</li>
+<li>Software</li>
+</ul>
+<p>The Data Loop Input Teststep we automatically create Variables for us that we can use in the parameter list of our URL
+To create a column, click the button <strong>Add new Column</strong></p>
+<p><img alt="Screenshot Databased Testcase DataLoopInputTeststep new column button" src="../storage/DatabasedTestcaseDataLoopInputTeststepNewColumnButton.png" /></p>
+<p>This will open a dialog where you enter the name of the column ( = variable name ) and confirm with <strong>OK</strong>.</p>
+<p>We will create to other columns with the name <strong>Country</strong> and <strong>Software</strong> and select the column <strong>Software</strong>. We should have the following contents:</p>
+<ul>
+<li>We have three columns (Limit, Country, Software)</li>
+<li>We have three variables on the testcase (Limit, Country, Software), the variable link is editable, but we are happy with the default.</li>
+<li>We have not yet any contents for the variables, which we will do next:</li>
+</ul>
+<p><img alt="Screenshot Databased Testcase DataLoopInputteststep after variable creation" src="../storage/DatabasedTestcaseDataLoopInputteststepAfterVariableCreation.png" /> </p>
+<hr />
+<p>We will create the following new table contents:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Limit</th>
+<th style="text-align: center;">Country</th>
+<th style="text-align: right;">Softwre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">US</td>
+<td style="text-align: right;">Apple</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">CA</td>
+<td style="text-align: right;">Apple</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">US</td>
+<td style="text-align: right;">Yelp</td>
+</tr>
+</tbody>
+</table>
+<p>After entering the table, select the second row und click the <strong>Run</strong> Button. this will give the following results:
+![Screenshot Databased Testcase DataLoopInputteststep after rows added and run.png)(storage/DatabasedTestcaseDataLoopInputteststepAfterRowsAddedAndRun.png)</p>
+<p>With this configuration in place, you can easily create new rows, which is not required for the tutorial. Select a specific row if you want to test manually a specific row.</p>
+<hr />
+<h2 id="step-5-edit-the-url-and-run-the-search-itunes-http-teststep">Step 5: Edit the URL and run the <strong>Search iTunes</strong> HTTP Teststep</h2>
+<p>We select the teststep <strong>Search iTunes</strong> and copy the URL in the URL textfield <em>https://itunes.apple.com/search?term=yelp&amp;country=us&amp;entity=software&amp;limit=5</em>
+We can disclose the <strong>Sidebar</strong> and the <strong>Test definition list (Testcase, Teststep)</strong> and focus on our current teststep, for now.
+We run the teststep and will get a JSON Response as in this sceenshot:
+(storage/DatabasedTestcaseHTTPTeststepWithfixedURL.) ![Databased Testcase HTTPTeststep with fixed URL]
+Now, we will replace the fixed parameter with variable placeholders:</p>
+<ul>
+<li>old: https://itunes.apple.com/search?term=yelp&amp;country=us&amp;entity=software&amp;limit=5</li>
+<li>new: https://itunes.apple.com/search?term=$(Testcase.Software)&amp;country=$(Testcase.Country)&amp;entity=software&amp;limit=$(Testcase.Limit)</li>
+</ul>
+<p>We will see this outcome:
+<img alt="Screenshot Databased Testcase HTTPTeststep with parameterized URL" src="../storage/DatabasedTestcaseHTTPTeststepWithVariableURL.png" /></p>
+<p>This works, but the URL is hard to edit, you may switch to a different URL edit, like <strong>URL with separate list of query parameters</strong></p>
+<p>![Databased Testcase HTTPTeststep with variable URL query parameter list.png)(storage/DatabasedTestcaseHTTPTeststepWithVariableURLQueryParameterList.png)</p>
+<hr />
+<h2 id="step-6-edit-and-run-the-dataloop-result-teststep">Step 6: Edit and run the DataLoop Result Teststep</h2>
+<p>We want to store some information from the HTTP request to a result teststep to assess the loop results in table later. This may be any spreadsheet application, such as Numbers or Excel. The approach is, you can use any variable value on the Teststep, Testcase, Testset or Repository and each loop will result in a new row in the result table. This result table can be exported to CSV and thus be imported to large set of external applications.
+For this tutorial, we would like to store:</p>
+<ul>
+<li>Limit</li>
+<li>Country</li>
+<li>Software</li>
+</ul>
+<p>Use may use a <a href="../views-teststeps/#view-datatransferteststep">Datatransfer Teststep</a> to include further data and access them via their link variables.</p>
+<p>We select the <strong>DataLoop ResultTeststep</strong> as shown below:
+<img alt="Screenshot Databased Testcase with selected data loop ResultTeststep after creation" src="../storage/DatabasedTestcaseDataLoopResultTeststepStart.png" /> </p>
+<p>We create the first new column <strong>Limit</strong>.Click on the button <strong>New Column</strong>.</p>
+<p><img alt="Screenshot Databased Testcase Data Loop ResultTeststep new column button" src="../storage/DatabasedTestcaseDataLoopResultTeststepNewColumnButton.png" /></p>
+<p>This will open a dialog where you can enter the name <strong>Limit</strong> and confirm with <strong>OK</strong>.</p>
+<p><img alt="Screenshot Databased Testcase data loop ResultTeststep new column dialog" src="../storage/DatabasedTestcaseDataLoopResultTeststepNewColumnDialog.png" /></p>
+<p>Select the column, you will see a view where you can link any variable within the current test definition hierarchy (teststep, testcase, testset, repository) to the new column.</p>
+<p><img alt="Screenshot Databased Testcase data loop ResultTeststep with Variable transfer view" src="../storage/DatabasedTestcaseDataLoopResultTeststepVariableTransferView.png" /></p>
+<p>Click on the variable <strong>Limit</strong> to link this testcase variable to the selected column.This will show the linked variable.</p>
+<p>!(storage/DatabasedTestcaseDataLoopResulTeststepColumnLimitOnly.png)</p>
+<p>We create two more columns and link them with the existing testcase variables that share their name. This will result in the following column-variable-data, assuming, you had selected the second row in the DataLoopInputTeststep and you pressed the <strong>Run</strong> button.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Limit</th>
+<th style="text-align: center;">Country</th>
+<th style="text-align: right;">Software</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">US</td>
+<td style="text-align: right;">Apple</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">CA</td>
+<td style="text-align: right;">Apple</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">US</td>
+<td style="text-align: right;">Yelp</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img alt="" src="../storage/DatabasedTestcaseDataLoopResulTeststepColumnLimit.png" /></td>
+<td style="text-align: center;"><img alt="" src="../storage/DatabasedTestcaseDataLoopResulTeststepColumnCountry.png" /></td>
+<td style="text-align: right;"><img alt="" src="../storage/DatabasedTestcaseDataLoopResulTeststepColumnSoftware.png" /></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="run-the-databased-testcase-and-the-dataloopresultteststep">Run the Databased Testcase and the DataLoopResultTeststep</h2>
+<p>When we run this teststep with the <strong>Run</strong> button, the current set of columns will be added with their linked variable values to the result table. The toggle <strong>Append to end of table</strong> is set to true. Press (optionally the <strong>delete</strong> button to remove the result row from the teststep run. We won't do it here.</p>
+<p><img alt="Screeenshot Databased Testcase data loop resul teststep with table content after run" src="../storage/DatabasedTestcaseDataLoopResulTeststepTableContentAfterRun.png" /></p>
+<p>Finally, we will run the DatabasedTestcase itself in the Testcase List View and see how this testcase iterates of the rows of the DataLoopInputTeststep.Make sure, the toggle <strong>Append to end of table</strong>is set to true in the result table.</p>
+<p><img alt="Screenshot data based testcase with data loop result teststep table content and testcase run instructions" src="../storage/DatabasedTestcaseDataLoopResultTeststepTableContentTestcaseRunInstructions.png" /></p>
+<p>After we click the <strong>Run</strong> button on the testcase list view with the <strong>Databased Testcase</strong> selected, we see that the test run iterates of the rows in the input table. Finally, we have three more rows in the result table.</p>
+<p><img alt="Screenshot data based testcase with data loop result teststep table content after testcase run" src="../storage/DatabasedTestcaseDataLoopResultTeststepTableContentTestcaseAfterRun.png" /> </p>
+<p>We hope this tutorial was helpful and you enjoy using APIJockey TEST.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

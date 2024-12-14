@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Testep views - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../views-repositories-testsets/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../teststepconfigviews/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#http-teststep-view" class="nav-link">HTTP Teststep View</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#request-overview" class="nav-link">Request overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#soap-teststep-view" class="nav-link">SOAP Teststep View</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#assertions_1" class="nav-link">Assertions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#attachments" class="nav-link">Attachments</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#view-datatransferteststep" class="nav-link">View DatatransferTeststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#view-randomizeteststep" class="nav-link">View Randomizeteststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#manual-randomizedvaluelistteststep-view" class="nav-link">Manual RandomizedvaluelistTeststep View</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#manual-randomizedvaluelist-teststep-view-details" class="nav-link">Manual Randomizedvaluelist Teststep view details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#show-output-view-variables-transfer-configuration" class="nav-link">(Show) Output view (Variables' transfer configuration)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#editable-table" class="nav-link">Editable table</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#randomizedvaluelist-teststep-view" class="nav-link">Randomizedvaluelist Teststep View</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#randomizedvaluelist-teststep-view-details" class="nav-link">Randomizedvaluelist Teststep view details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#column-editor-view_1" class="nav-link">Column editor view</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#output-view-variables-transfer-configuration" class="nav-link">Output view (Variables' transfer configuration)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#formatted-value-list-preview" class="nav-link">Formatted value list preview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#http-teststep-assertion-list" class="nav-link">HTTP Teststep assertion list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#assertions_2" class="nav-link">Assertions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#assertion-list" class="nav-link">Assertion list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="http-teststep-view">HTTP Teststep View</h1>
+<p>A HTTP Teststep allows you to send a HTTP request for several HTTP methods such as GET, POST and PUT. Additionally, you may send JSON in the HTTP-Body.</p>
+<p>See <a href="../task-create-testdefinition/#create-an-http-teststep">Create HTTP Teststep</a>, to add a new HTTP Teststep for a testcase</p>
+<p>The screenshot contain sample URLs from the ITunes store, provided on <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html">iTunes Search API Documentation Archive</a></p>
+<p>Please don't understand these screenshots as any kind of endorsement from Apple® for this software.</p>
+<p><img alt="HTTP teststep tab request url only edit mode" src="../storage/views-httpteststep-tab-request-urlonlyeditmode.png" /></p>
+<h2 id="request-overview">Request overview</h2>
+<p>The Request editor provides four tabs, we will cover these in the order they appear on the screen.</p>
+<h3 id="request-tab">Request (Tab)</h3>
+<ul>
+<li>
+<p>URL: Enter the URL that you want to test against.</p>
+</li>
+<li>
+<p>URL edit mode: There are three url edit modes available. We will cover these below</p>
+<ul>
+<li>
+<p>Selected HTTP Teststep 
+        The HTTP Teststep editor appears, when you select an HTTP Teststep in the teststep list</p>
+</li>
+<li>
+<p>Run URL request 
+         Press this button to send yor URL request to the URL</p>
+</li>
+<li>
+<p>Response viewer: 
+        This viewer displays the JSON content and may be empty, if no content is returned from the server.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="url-edit-mode">URL edit mode</h3>
+<p>There are three url edit modes:</p>
+<ul>
+<li>URL as a single String: </li>
+</ul>
+<p>You enter the full url including host, port, route and query parameters, this is the default</p>
+<ul>
+<li>
+<p>URL with separate list of query parameters: 
+                You have separate input fields for schema, host, port, route and an editable list of query parameters</p>
+</li>
+<li>
+<p>URL with separate list for route parameters and query parameters: 
+                You have separate input fields for schema, host, port and editable lists of route parameters and query parameters</p>
+</li>
+</ul>
+<h3 id="configure-your-request">Configure your request</h3>
+<p><img alt="HTTP Teststep configuration" src="../storage/httpteststepconfig.png" /></p>
+<p>The HTTP teststep configuration allows you the select the HTTP method and the authentication method (none, basic authentication and bearer authentication).</p>
+<h3 id="supported-http-methods">Supported HTTP methods</h3>
+<pre><code>            - GET
+            - POST
+            - PUT
+            - DELETE
+            - HEAD
+            - PATCH
+</code></pre>
+<h3 id="supported-mime-content-types-for-post-and-put">Supported MIME content types for POST and PUT</h3>
+<pre><code>            - application/json
+            - text/xml
+            - application/soap+xml
+</code></pre>
+<h3 id="resolvedrequest-tab">resolvedRequest (Tab)</h3>
+<p>This viewer show the request with resolved variable values</p>
+<h3 id="header-fields">Header fields</h3>
+<p>This view displays the HTTP headers used for the URL request. You may create your custom set of HTTP headers for test reasons.</p>
+<p><img alt="HTTP Teststep header fields configuration" src="../storage/httpteststepheaderFieldstab.png" /></p>
+<ul>
+<li>
+<p>use manual header fields:
+Set the toggle to true, to override the automatic header field configuration.</p>
+</li>
+<li>
+<p>Add new HTTP Header: 
+Creates a new header. There is no automatic check for duplicate names, use the Button <cite>check for duplicates</cite> to perform this check.</p>
+</li>
+<li>
+<p>check for duplicates: 
+Header fields names must be unique, If you use manual header fields, press this button to check for duplicates</p>
+</li>
+<li>
+<p>arbitrary selection to remove elements: 
+You can select arbitrary elements to remove these.</p>
+</li>
+<li>
+<p>remove selected elements: 
+Press this button to remove the selected elements. This has only an effect, if you use manual headers.</p>
+</li>
+</ul>
+<h3 id="assertions">assertions</h3>
+<p>The assertion list view is described here: <a href="./#http-teststep-assertion-list">HTTP Teststep assertion list</a></p>
+<h1 id="soap-teststep-view">SOAP Teststep View</h1>
+<p>A SOAP Teststep is a WSDL-aware Teststep that reference a specific webservice method.
+You have request and response area with various that help you manage the complexity of SOAP-XML data models based on WSDL-XSD-Schema definition.
+Run your SOAP request and verify the response. You can view the HTTP header fields for request and response. A Soap Teststep is created based on  a WSDL operation either for a SOAP 1.1 or SOAP 1.2 WsdlService Port
+<img alt="SOAP Teststep editor screenshot" src="../storage/SOAPTeststepOverview.png" /></p>
+<h3 id="overview">Overview</h3>
+<p>The SOAP Teststep View provides a number of sub views and configuration options.</p>
+<ul>
+<li>Teststep configuration options that effects request and response handling.</li>
+<li>A Request view with a number of views that shows request information</li>
+<li>A Response view with a number of views that show response information</li>
+</ul>
+<hr />
+<h3 id="teststep-configuration-options">Teststep configuration options</h3>
+<p><img alt="SOAP Teststep editor configuration screenshot" src="../storage/SOAPTeststepEditorConfigView.png" /></p>
+<h3 id="teststep-configuration-view">Teststep configuration view</h3>
+<ul>
+<li>
+<p><strong>Send Request with MTOM</strong> will transform your request in the required MTOM request format and replace all occurrences of elements of type {http://www.w3.org/2005/05/xmlmime} base64Binary with the {http://www.w3.org/2004/08/xop/include }Include.
+It will apply all required transformations to create a valid MTOM optimized request.</p>
+</li>
+<li>
+<p><strong>Resolve XOP:include in Response</strong> transforms an MTOM-optimized response to a response without optimizations.
+It will inline the SOAPAttachment data and transform all occurrences of {http://www.w3.org/2004/08/xop/include }Include with {http://www.w3.org/2005/05/xmlmime} base64Binary</p>
+</li>
+<li><strong>Webservice url</strong> is required to send the request to the webservice endpoint under test. If you choose to use <a href="../conceptual-runenvironment/">View Environment</a> and have configured the webservice urls for this WSDL and the selected Run Environment, the url becomes non-editable.
+If <strong>no authentication</strong> is selected the HTTP header <em>autorization</em> is omitted otherwise sent with the base64 encoded string of <strong>username for basic authentication</strong> and <strong>password for basic authentication</strong> as displayed in <strong>preview base64 encoded authentication string</strong>.</li>
+<li><strong>WSDL operation reference</strong> is a required setting for a SOAP Teststep. APIJockey TEST uses the WSDL-definitions to validate the request and the response. It allows for using MTOM-optimized requests as described above.
+When you click on the <strong>binocular</strong> button, you will get a dialog with a list of WSDL definitions with their SOAP 1.1. and SOAP 1.2 operations.</li>
+<li><strong>Authentication options</strong> include <strong>no authentication</strong>, <strong>basic authentication</strong> with username and password and <strong>bearer authentication</strong> with bearer token in a free to define http header.</li>
+</ul>
+<hr />
+<h3 id="soap-request-editor-overview">SOAP Request editor overview</h3>
+<p>The request view contains several tabs to display different information</p>
+<ul>
+<li><strong>Request with variables</strong> your XML editor with syntax highlighting</li>
+<li><strong>XML editor</strong> is a visual tree-like editor that allows you to edit XML elements with text content and select variables.</li>
+<li><strong>Request with variable values resolved</strong>. Viewer that resolves values of Variables</li>
+<li><strong>Assertions</strong> based on simplified XPath that assert occurrences of specified elements. Details see below</li>
+<li><strong>Attachments</strong> allow for selection and preview of documents that you want to send with your request.</li>
+<li><strong>URLRequest Details</strong> displays the HTTP headers used to create the request.</li>
+</ul>
+<h3 id="tab-request-with-variables">Tab Request with variables</h3>
+<ul>
+<li>
+<p><strong>Run Teststep</strong> will send the request to the specified URL, wait for the response and run all assertions against the response.</p>
+</li>
+<li>
+<p><strong>Request editor</strong> is your Syntax-Highlighting editor to work on your request</p>
+</li>
+<li>
+<p><strong>Create new request from WSDL operation</strong> will delete your current request and create a new one based on the current WSDL operation information.</p>
+</li>
+<li>
+<p><strong>Validate request</strong> will validate against the WSDL operation information and displays errors in case of non-conformance with this specification.</p>
+</li>
+<li>
+<p><strong>Pretty print XML</strong> does indents and create newlines for each element.</p>
+</li>
+</ul>
+<p>You enter your request in this syntax highlighting XML editor. Variables are colored to make them easy to distinguish, see <a href="../teststepconfigviews/#view-variables">Variables</a></p>
+<p><img alt="Screenshot SOAP request editor" src="../storage/soaprequesteditor.png" /></p>
+<hr />
+<h3 id="xml-editor">XML editor</h3>
+<p>The XML editor provides an additional edit option, with focus on XML elements that have text content and where the structure does not need to be changed.
+This is often the case for existing requests where values only need to be variable-ized or just changed.</p>
+<p><strong>NOTE:</strong> Press the  <strong>ENTER</strong> key when editing is done to update the underlying xml.</p>
+<p><img alt="Screenshot SOAP request XML editor" src="../storage/soapxmlrequesteditor.png" /></p>
+<hr />
+<h3 id="request-with-variable-values-resolved">Request with variable values resolved</h3>
+<p>When you use variables, see <a href="../teststepconfigviews/#view-variables">Variables</a> their name/value will be represented as follows:</p>
+<ul>
+<li><strong>tab Request with Variables</strong> as a highlighted variable identifier</li>
+<li><strong>tab XML editor</strong> no highlighting of the variable identifier</li>
+<li><strong>tab Request with Variables resolved</strong> with the current variable value, Attachment references are NOT resolved</li>
+</ul>
+<p>When you switch from your request editor to this tab, APIJockey TEST will reevaluate the variables and resolve these as it does when sending the request. Bear in mind that this is only a viewer. </p>
+<hr />
+<h2 id="assertions_1">Assertions</h2>
+<p>Testing webservices can become repetitive and cumbersome. Assertions help you to automate checks and free you from repetitive error-prone verifications.
+You will find more time to further explore responses and find unexpected behaviour.
+Assertions have their own tab in the SOAP Request view and allow you for editing assertions while viewing the Response.</p>
+<p><img alt="Screenshot SOAP Assertionlist with Button description" src="../storage/SOAPAssertionlist.png" /></p>
+<p>APIJockey TEST supports the following assertions types</p>
+<ul>
+<li>
+<p>create a <strong>new XPath Assertion</strong> to verify the SOAP Response with an XPath expresssion. APIJockey TEST will support you with a visual editor to enter the XPath and to define the type of verification.  See <a href="../teststepconfigviews/#xpath-assertion-editor">XPath Assertion editor</a>.</p>
+</li>
+<li>
+<p>create a <strong>new HTTP Assertion</strong>  HTTP Status, response time and data length, see <a href="../teststepconfigviews/#http-assertion-editor">HTTP Assertion editor</a></p>
+</li>
+<li>
+<p>create a <strong>new Image Assertion</strong>  will create an AI-based Assertion that will assess Text and Barcode information from your image. Note: PDF-Documents are also considered images in this Assertion type.See <a href="../teststepconfigviews/#image-assertion-editor">Image Assertion editor</a></p>
+</li>
+<li>
+<p>create a <strong>new PDF Assertion</strong>  will create a PDF Assertion that will assess Text and document property information from your PDF-Document. Note: Sometimes PDF-Documents contain images, only and no text will be found. See <a href="../teststepconfigviews/#pdf-assertion-editor">PDF Assertion editor</a>. In this case, you will need to use the Image Assertion type.</p>
+</li>
+</ul>
+<h2 id="attachments">Attachments</h2>
+<p>Attachments are used in both requests and responses.</p>
+<h3 id="url-request-header">URL request header</h3>
+<p>This tab displays the HTTP header used with the last URL request and may be empty if no request has been sent after (re-)starting APIJockey TEST.</p>
+<h1 id="view-datatransferteststep">View DatatransferTeststep</h1>
+<p>A Datatransfer teststep allows you to query results from SOAP teststeps (request and response) and store them in a variable. This is helpful in cases where you need
+to establish a set of requests where the input of a request is part of the response of the previous teststep..</p>
+<h3 id="overview_1">Overview</h3>
+<p>When you create and select Datatransfer Teststep in the <a href="../views-repositories-testsets/#teststep-list-view">Teststep list view</a>, the following editor appears.</p>
+<p><img alt="Datatransfer teststep Details screenshot" src="../storage/DatatransferteststepDetails.png" /></p>
+<ul>
+<li>
+<p><strong>create new XPath expression</strong> opens a dialog to create an xpath expression to query data from a previous teststep (request or response) in this testcase..</p>
+</li>
+<li>
+<p><strong>create new XQuery expression</strong> opens a dialog to create an xpath expression to query data from a previous teststep (request or response) in this testcase. Note that you will use XPath in XQuery as well, so depending on your use case, XQuery may be the choice..</p>
+</li>
+<li>
+<p><strong>delete</strong> the selected datatransfers</p>
+</li>
+<li>
+<p><strong>rename</strong> the selected datatransfer</p>
+</li>
+<li>
+<p><strong>run datatransfer</strong> needs a referenced variable. See <a href="../teststepconfigviews/#variablevaluetransfer">VariableValueTransfer</a>  for details</p>
+</li>
+<li>
+<p><strong>run result status</strong> displays the test run result status of an individual teststep.</p>
+</li>
+<li>
+<p><strong>enable/disable</strong> includes or excludes a datatransfer on a test run</p>
+</li>
+<li>
+<p><strong>move up</strong> and <strong>move down</strong> has impact on the list order and on the order they are invoked for test runs. As the datatransfers query teststep request and response they cannot have dependencies on each other. The order is intendedfor your organization, only.</p>
+</li>
+<li>
+<p>Documentation of the <strong><a href="../pasteboard/">pasteboard commands</a></strong></p>
+</li>
+</ul>
+<hr />
+<h3 id="walkthrough-to-create-an-xpath-datatransfer">Walkthrough to create an XPath datatransfer</h3>
+<p>We will create an XPath datatransfer (value provider) with a namespace-aware XPath expression. Be aware that we will use the <strong>request</strong> for this XPath expression. In general, you may use the <strong>response</strong> for your query.
+To make this work, you need to walk through our <a href="../gettingstarted/">getting started tutorial</a>. Once you are done, you need to change the request as follows:
+We will query the value of msg:Element and store it in a testcase variable</p>
+<pre><code>&lt;div&gt;
+&lt;pre&gt;
+&amp;lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&amp;gt;
+&amp;lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&amp;gt;
+&amp;lt;soapenv:Header&amp;gt;&amp;lt;/soapenv:Header&amp;gt;
+&amp;lt;soapenv:Body&amp;gt;
+&amp;lt;msg:Enumerate xmlns:msg="http://schemas.xmlsoap.org/ws/2004/09/enumeration"&amp;gt;
+&amp;lt;!-- continue here --&amp;gt;
+&amp;lt;msg:Element&amp;gt;USD&amp;lt;/msg:Element&amp;gt;
+&amp;lt;/msg:Enumerate&amp;gt;
+&amp;lt;/soapenv:Body&amp;gt;
+&amp;lt;/soapenv:Envelope&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>*</strong>&gt;</p>
+<h3 id="input-configuration">Input configuration</h3>
+<p>Click with your mouse on the button <strong>create new XPath expression</strong>. This will open a dialog. Enter the name <strong>currency</strong> and confirm with <strong>ok</strong>. You will see the new datatransfer value provider in the list.</p>
+<p><img alt="Datatransfer value provider details screenshot" src="../storage/DatatransferValueProviderDetails.png" /></p>
+<hr />
+<p>Click with your mouse on the teststep <strong>Enumerate</strong>. This will link the teststep with the value provider and display the following view:</p>
+<p><img alt="Datatransfer value provider details with referenced teststep screenshot" src="../storage/DatatransferValueProviderReferencedteststep.png" /></p>
+<ul>
+<li>
+<p>You may remove the current teststep reference with the button <strong>remove configuration</strong>.</p>
+</li>
+<li>
+<p><strong>read from</strong> You may switch to request/response of the referenced teststep to query data, default is <strong>response</strong>.</p>
+</li>
+</ul>
+<p>We need to reference the request for our walkthrough. For this reason the screenshot displays the value <strong>request</strong> after change from the default as the input type of the value provider.
+We enter a simple, namespace aware XPath-Expression.
+<em>//msg:Element/text()</em>
+Now, we run this XPath expression and will get an error message</p>
+<p>Click with your mouse on the button <strong>run XPath value provider</strong>
+This will show an error message.</p>
+<p><img alt="XPath expression with error" src="../storage/XPathexpressionWithError.png" /></p>
+<hr />
+<p>The reason for the error message is an unsatisfied mapping from the prefix to the namespace. This can be resolved very easily. Click on the button <strong>remove error message</strong> as we don't need this error message.</p>
+<p><img alt="XPath expression with error" src="../storage/XPathexpressionWithError.png" /></p>
+<p>Switch to to the tab <strong>Namspaces</strong> and click with your mouse on the button <strong>preset namespaces from input teststep</strong></p>
+<p><img alt="XPath expression preset namespaces" src="../storage/DatatransferValueProviderPresetNamespaces.png" /></p>
+<p>This will load the namespaced defined in the input XML (request) with the prefixes used in the XML.
+<img alt="XPath expression namespaces loaded" src="../storage/DatatransfervalueProviderNamespacesLoaded.png" /></p>
+<p>You may run the XPath expression again, and will get error message that no variable has been loaded.</p>
+<hr />
+<p>Create your own testcase variable <strong>currency</strong>. In case you're uncertain, how to proceed, see <a href="../teststepconfigviews/#variablevaluetransfer">Create a VariableValueTransfer</a>. Then run the value provider again. The result should be as follows: </p>
+<p><img alt="XPath expression variable transfer successful&quot;" src="../storage/DatatransferValueProviderSuccessful.png" /></p>
+<h1 id="view-randomizeteststep">View Randomizeteststep</h1>
+<p>This teststep editor lets you manage a list of random value providers based on String, Integer, Double, Date and UUID data types.</p>
+<h3 id="discussion">Discussion</h3>
+<p>A Randomizeteststep supports a list of random values that store their values in variables.
+When you select a Randomizeteststep. you will see an empty editor, as in the screenshot below.
+A random value provider creates a Text/String based on a  list of individual value sub elements from different data types.
+It is a powerful randomizing utility, and you may need to get used it. The fact that no coding is necessary may make this one of your favorite tools to randomize you requests.</p>
+<p><img alt="Teststep list view" src="../storage/RandomizeTeststepEmptyListview.png" /></p>
+<h3 id="commands">Commands</h3>
+<ul>
+<li><strong>create new random value</strong> creates a new random value provider.</li>
+<li><strong>rename</strong> selected element</li>
+<li><strong>delete</strong> all selected elements</li>
+<li><strong>move up</strong> and <strong>move down</strong> has impact on the list order and on the order they are invoked for test runs. The order is intended to define which teststep needs the input of another teststep.</li>
+<li><strong>run value provider list</strong> regenerates new random values for all selected elements in the displayed order, or all elements, when no element is selected.</li>
+<li>Documentation of the <strong><a href="../pasteboard/">pasteboard commands</a></strong></li>
+</ul>
+<hr />
+<h3 id="randomvalueproviders">RandomValueProviders</h3>
+<p>A RandomizeTeststep includes an (initially empty) list of RandomValueProviders</p>
+<p><img alt="RandomizeTeststep random cxpression commands" src="../storage/RandomizeTeststep-RandomExpressionCommands.png" /></p>
+<p>When you need to provide several independent random values at a certain point in your teststep order, you would need a list of RandomValueProvider. depending on your underlying
+data type, you have to choose between:</p>
+<ul>
+<li><strong>Text</strong>: Creates an expression value with arbitrary characters in a specified length</li>
+<li><strong>Integer</strong>: Creates an expression value between a lower range and an upper range in a specified formatting</li>
+<li><strong>Double</strong>: Creates an expression value between a lower range and an upper range in a specified formatting</li>
+<li><strong>Date</strong>: Creates an expression value between a lower range and an upper range in a specified formatting</li>
+<li><strong>UUID</strong>: Creates a UUID</li>
+<li><strong>rename</strong>: opens a dialog to rename a selected element</li>
+<li><strong>delete</strong>: deletes the selection</li>
+<li><strong>move up</strong>: moves the selection up in the list</li>
+<li><strong>move down: moves the selection down in the list</strong></li>
+<li><strong>enable</strong>: enables/disables the selection</li>
+<li><strong>run expressions</strong>: The RandomValueProvider returns a concatenation of the expressions from top to down as one result.</li>
+</ul>
+<hr />
+<h3 id="text-randomvalue-expression">Text Randomvalue expression</h3>
+<p>n
+Use this type if you want to create a text with arbitrary characters that may occur in a fixed length value.
+(/storage/RandomizeTeststep-VariableTextExpression.png" alt="screenshot RandomizeTeststep variable text expression"/&gt;</p>
+<ul>
+<li><strong>current random value</strong> displays the result of the random value generation. </li>
+<li><strong>text length</strong> defines, how long the text should be. Each character can be one of <strong>included characters</strong>.</li>
+<li>This behaviour is applied, when you choose the value expression type <strong>variable random text</strong></li>
+</ul>
+<p>A text random value expression may be part of a list of expression. Part of this concatenated text may be a fix character string, e.g. the first three characters must be <strong>ABC</strong>
+<img src="/storage/RandomizeTeststep-FIXTextExpression.png" alt="screenshot RandomizeTeststep fix text expression"/></p>
+<hr />
+<h3 id="integer-randomvalueexpression">Integer RandomValueExpression</h3>
+<p>Use this, if you want to provide an integer random value between a lower and an upper range with or without formatting.
+<img src="/storage/RandomizeTeststep-RandomIntegerExpression.png" alt="screenshot RandomizeTeststep random integer expression"/>
+Usage instructions</p>
+<ul>
+<li>define the included <strong>lower range</strong></li>
+<li>define the excluded <strong>upper range</strong></li>
+<li>set the <strong>formatting for positive numbers</strong></li>
+<li>set the <strong>formatting for negative numbers</strong>. It might be the case that you want to return a negative number as its absolute value</li>
+</ul>
+<h3 id="double-randomvalueexpression">Double RandomValueExpression</h3>
+<p>Use this, if you want to provide a random double value between a lower and an upper range with or without formatting.
+<img src="/storage/RandomizeTeststep-RandomDoubleExpression.png" alt="screenshot RandomizeTeststep random integer expression"/>
+Usage instructions</p>
+<ul>
+<li>define the included <strong>lower range</strong></li>
+<li>define the excluded <strong>upper range</strong></li>
+<li>set the <strong>formatting for positive numbers</strong>. This may include special characters as a currency indicator.</li>
+<li>set the <strong>formatting for negative numbers</strong>.</li>
+</ul>
+<h3 id="date-randomvalueexpression">Date RandomValueExpression</h3>
+<p>Use this, if you want to provide a random formatted date between a lower and an upper range with or without formatting.
+<img src="/storage/RandomizeTeststep-RandomDoubleExpression.png" alt="screenshot RandomizeTeststep random integer expression"/>
+Usage instructions</p>
+<ul>
+<li>set the <strong>first possible date</strong></li>
+<li>set the <strong>last possible date (excluded)</strong></li>
+<li>set the mandatory <strong>formatting</strong>.</li>
+</ul>
+<h3 id="uuid-randomvalueexpression">UUID RandomValueExpression</h3>
+<p>Use this, if you need a unique identifier, e.g.  to have a trace in your logging system.</p>
+<h3 id="variablevaluetransfer">VariableValueTransfer</h3>
+<p>Once you have set up the RandomValueProvider, you will need to define the <a href="../teststepconfigviews/#variablevaluetransfer">VariableValueTransfer</a></p>
+<h1 id="manual-randomizedvaluelistteststep-view">Manual RandomizedvaluelistTeststep View</h1>
+<p>A Manual Randomizedvaluelist teststep takes a list of columns with equal number of row and provides randomized values from this table in variables that can be used in following teststeps. The purpose is to permute data to a maximum.
+This helps to test efficiently webservices with a varying (even small) set of test data. A small number of data can thus provide more combinations when repeating a test.
+Repeating testcases without data variations has only limited benefits. You would not test thoroughly, and test all combinations of testcases is an endeavour that only few testers will continue to perform in the sense of regression testing.
+See <a href="../task-create-valuelist-teststeps/#create-a-randomizedvaluelist-teststep">Create a RandomizedValuelist Teststep</a> to add this teststep.</p>
+<h3 id="overview-of-the-configuration-options">Overview of the configuration options</h3>
+<p><a href="../task-create-valuelist-teststeps/#create-a-manual-randomizedvaluelist-teststep">Manual Randomized Valuelist Teststep overview</a></p>
+<p>The view contains three main parts</p>
+<ul>
+<li>Column editor (blue bordered area)</li>
+<li>Variables transfer (red bordered area)</li>
+<li>Editable table</li>
+</ul>
+<p>The teststep configuration foresees the following elements:</p>
+<hr />
+<h2 id="manual-randomizedvaluelist-teststep-view-details">Manual Randomizedvaluelist Teststep view details</h2>
+<h3 id="column-editor-view">Column editor view</h3>
+<p>You maintain a list of columns for your editable tables. The <strong>current columns</strong> are displayed as a list with configuration information</p>
+<ul>
+<li><strong>add column</strong> creates a new column. This will create empty contents for existing rows and a testcase variable that is referencing this column.</li>
+<li><strong>Enable column(s)</strong>: A column value is transferred to a variable only, if the column is enabled. You may exclude (ignore) columns in a CSV file. That way you don't need to modify the CSV file itself. All selected columns are enabled independent of their current state.</li>
+<li><strong>Disable column(s)</strong>: The selected columns are disabled. No value will be transferred to the connected variable. IF there is a value in the variable e.g. due to manual editing or previous runs, this value will remain. You may optionally remove the variable. A column that is
+disabled has the platform specific secondary color, in general this is grey instead of dark black text color, both in the column list and the <strong>Value list preview</strong> on the right side.</li>
+<li><strong>display column(s)</strong>: A column can be displayed and not displayed in the preview. This may help you to focus on specific columns during editing. This has impact on the actual transferral on variables.
+A column that is shown has a different Icon that one that is not displayed.</li>
+<li><strong>Hide column(s)</strong>: Removes all selected columns from the preview, You may focus on a single column or any subset of columns that you want to inspect and/or format. </li>
+<li><strong>rename column</strong> will rename the current column in the table.</li>
+<li><strong>delete column</strong> removes all selected columns from existing rows.</li>
+</ul>
+<hr />
+<h2 id="show-output-view-variables-transfer-configuration">(Show) Output view (Variables' transfer configuration)</h2>
+<p>This is explained in full detail in <a href="../task-create-valuelist-teststeps/#step-2-create-a-randomvalueprovider-for-a-simplified-vin">Output view (Variables' transfer configuration) in Randomizedvaluelist Teststep</a>.</p>
+<h2 id="editable-table">Editable table</h2>
+<p>This editable table displays all <strong>shown columns</strong>. No further formatting applies. The following screenshot shows:</p>
+<ul>
+<li>two defined columns (first name, last name</li>
+<li><strong>add single row</strong> will add a single row for all columns</li>
+<li><strong>add number of rows</strong> will show a dialog where you enter the number of rows and create the number of rows</li>
+<li><strong>delete selected row(s)</strong>will delete the selected rows <strong>without further warning!</strong></li>
+<li><strong>table rows</strong> show only columns with <strong>diplay</strong> equals true (see Column editor view)</li>
+</ul>
+<h1 id="randomizedvaluelist-teststep-view">Randomizedvaluelist Teststep View</h1>
+<p>A Randomizedvaluelist Teststep takes a table of values (CSV-File technically) and provides randomized values from this table in variables that can be used in web service requests. The purpose is to permutate request data to a maximum.
+This helps to test efficiently webservices with a varying (even small) set of test data. A small number of data can thus provide more combinations when repeating a test.
+Repeating testcase without variation has only limited benefits. You would not test thoroughly and test all combinations of testcases is an endeavour that only few testers will continue to perform in the sense of regression testing.
+See <a href="../task-create-valuelist-teststeps/#create-a-randomizedvaluelist-teststep">Create a RandomizedValuelist Teststep</a> to add a new RandomizedValuelist Teststep for a testcase.</p>
+<h3 id="overview-of-the-configuration-options_1">Overview of the configuration options</h3>
+<p>The teststep configuration foresees the following elements:</p>
+<ul>
+<li>enable/disable columns</li>
+<li>randomizing on a row base or randomizing for each column</li>
+<li>show/hide columns</li>
+<li>configure the output variables (name / parent element)</li>
+</ul>
+<p>The following example displays favorite U.S. first and common last names, together with a combination of some postal codes and states. The premise is to combine first and last names randomly and keep a given postal code and state combination.
+We would use <strong>two</strong> Randomizedvaluelist teststeps to perform this task.</p>
+<h2 id="randomizedvaluelist-teststep-view-details">Randomizedvaluelist Teststep view details</h2>
+<p><img alt="Overview" src="../storage/RandomizedValuelistTeststep-Overview.png" /></p>
+<p>The view contains three main parts</p>
+<ul>
+<li>Column editor (upper left) and column formatting</li>
+<li>Variables transfer (lower left)</li>
+<li>Formatted value list preview (table view on the right)</li>
+</ul>
+<h2 id="column-editor-view_1">Column editor view</h2>
+<p>A CSV file is interpreted as a list of rows consisting of equal columns. You may have been provided with a file and may configure the columns that you want to use and foresee further formatting</p>
+<ul>
+<li><strong>Enable columns</strong>: A column value is transferred to a variable only, if the column is enabled. You may exclude (ignore) columns in a CSV file. That way you don't need to modify the CSV file itself. All selected columns are enabled independent of their current state.</li>
+<li><strong>Disable columns</strong>: The selected columns are disabled. No value will be transferred to the connected variable. IF there is a value in the variable e.g. due to manual editing or previous runs, this value will remain. You may optionally remove the variable. A column that is
+disabled has the platform specific secondary color, in general this is grey instead of dark black text color, both in the column list and the <strong>Value list preview</strong> on the right side.</li>
+<li><strong>Show columns</strong>: A column can be displayed and not displayed in the preview. This may help you to focus on specific columns during editing. This has impact on the actual transferral on variables.
+A column that is shown has a different Icon that one that is not displayed.</li>
+<li><strong>Hide columns</strong>: Removes all selected columns from the preview, You may focus on a single column or any subset of columns that you want to inspect and/or format. </li>
+</ul>
+<h3 id="formatting">Formatting</h3>
+<p>The formatting view is visible when you select a single column in the column editor view. The formatting options depend on the underlying type that was identified during the process of reading the CSV file.</p>
+<ul>
+<li>String values</li>
+<li>Numbers (Integers, Double, Float)</li>
+<li>Dates</li>
+</ul>
+<p>String values can be any text, boolean values or dates in text representations that are not recognized. While booleans can be easily interpreted by changing the <a href="#csvfilereadingoptions">reading options&gt;</a> the text representation of dates may vary for each column.
+Therefore, you may choose to redefine a column value type from string to date and apply formatting for the data when transferred to a variable:
+Numbers (Integers, Double, Float) are in general easy to interpret, Here you can apply a number formatting for positive and negative values:
+Dates are identified if they follow the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 string representation</a>. If the CSV file holds dates with a different date format, you may still process them by applying the <strong>Treat as Date</strong> flag.</p>
+<h2 id="output-view-variables-transfer-configuration">Output view (Variables' transfer configuration)</h2>
+<p>A randomized value list foresees a variable transfer for each column that is enabled. The variables can be connected to the testcase, parent teststep or parent repository. You will only be able to run the teststep successfully, when you have
+created and connected variables to each individual columns. This can be done with a single click and repeated whenever required.</p>
+<ul>
+<li><strong>Show output view (variables connected with columns)</strong>: shows or hides the entire view. Once the configuration is done you may hide this view.</li>
+<li><strong>run randomize teststep and update variables</strong>: This command is equal to the <strong>run</strong> command in the teststep list view. It provides a randomized value for each column and updates the referenced variable.</li>
+<li><strong>select randomize type</strong>You may want to randomize columns independently or row-based. In our example file, you may want to randomize first names and last names independently. You may want to keep the columns postal code and state together. In This case you would work with two teststeps referring the same CSV file.</li>
+<li><strong>run randomize teststep and preview results</strong>: This command can be run without referenced variables. It displays the randomized values for all enabled columns with their respective <a href="#formatting">formatting</a>.</li>
+<li><strong>default connect between variables and columns</strong>: Each column must be assigned a variable in order for the randomized value to be transferred. This command would create a variable for each <strong>enabled</strong>column. When you click this button again, the existing variables will be deleted and replaced by a new set of variables.</li>
+</ul>
+<p>You may change the variables reference in the. </p>
+<h3 id="manual-configuration-of-the-variables-transfer">Manual configuration of the variables' transfer</h3>
+<p>When you select a single line in the output view, the view is split in two vertical sections. The output view shrinks horizontally and provides the option to edit the variables transfer reference.</p>
+<p><img alt="Randomized Valuelist teststep variables transfer" src="../storage/RandomizedValuelistTeststep-Variablestransfer.png" /></p>
+<ul>
+<li><strong>The selected column value</strong> displays name and value of the randomized column.</li>
+<li>The button <strong>remove variable reference</strong> gives the option to configure a different variable reference by selecting the parent testcase, testset or repository and select one of their attached variables including creating a new variable.</li>
+<li><strong>variable value</strong> displays the current value of the referenced variable. This should be same value as the randomized </li>
+</ul>
+<h2 id="formatted-value-list-preview">Formatted value list preview</h2>
+<p>The formatted value list preview displays all rows in the CSV file with all <strong>shown</strong> columns and applied formatting for each column.</p>
+<p><img alt="RandomizedValuelistTeststep data preview" src="../storage/RandomizedValuelistTeststep-DataPreview.png" /></p>
+<ul>
+<li><strong>Button Show/hide CSV reading config button</strong> (un)discloses a button to show the CSV reading configuration.</li>
+<li><strong>open configuration button</strong> opens a dialog to <a href="#csv-file-reading-options">configure the options</a> when a CSV is read.</li>
+<li><strong>file url</strong>: When you select a file from your desktop, the file url is stored. The file data is read and its contents are stored with the formatting options as separate information.</li>
+<li><strong>Button source data</strong> reads the file url data and displays the data in text file view without overriding any column configurations.</li>
+<li><strong>number of rows in file</strong> displays the number of rows applying the configuration option <strong>empty lines</strong>.</li>
+<li><strong>CSV file data with configuration</strong> displays the formatted columns. Columns that are disabled are shown with the system' secondary color, this may be gray instead of black text color on your system.</li>
+</ul>
+<h3 id="csv-file-reading-options">CSV file reading options</h3>
+<p>A CSV file may have various textual representations. Depending on your output requirement you may need to modify the default values.</p>
+<p><img alt="CSV file reading options configuration view" src="../storage/CSVFileReadingOptionsView.png" /></p>
+<ul>
+<li>You MUST provide row headers</li>
+<li>you may ignore empty lines, they will not appear as rows in the preview data list</li>
+<li>Your CSV file may use escaping, verify if the escape character fits</li>
+<li>Your CSV file may use quotes for your columns</li>
+<li>You may list a set of <strong>false encodings</strong></li>
+<li>You may list a set of <strong>nil encodings</strong></li>
+<li>You may list a set of <strong>true encodings</strong></li>
+<li><strong>OK</strong> saves your changes and dismisses the dialog</li>
+<li><strong>Cancel</strong> flushes your changes and dismisses the dialog</li>
+</ul>
+<h1 id="http-teststep-assertion-list">HTTP Teststep assertion list</h1>
+<p>Testing webservices can become repetitive and cumbersome. Assertions help you to automate checks and free you from repetitive error-prone verifications.
+You will find more time to further explore responses and find unexpected behaviour.
+Assertions have their own tab in the HTTP Request view and allow you for editing assertions while viewing the Response.</p>
+<p><img alt="Screenshot HTTP Teststep Assertion View" src="../storage/HTTPTeststepAssertionView.png" /></p>
+<hr />
+<h1 id="assertions_2">Assertions</h1>
+<p>Assertions help you to assess the validity of a teststeps output. APIJockey TEST provides a set of assertions types depending on the output type unter test.</p>
+<h2 id="assertion-list">Assertion list</h2>
+<p><img alt="HTTP teststep assertion list" src="../storage/HTTPAssertionListView.png" /></p>
+<p>We discuss the list buttons in the order they appear in the view from left to right</p>
+<ul>
+<li>Create new HTTP assertion: See <a href="../teststepconfigviews/#http-assertion-editor">HTTP assertion editor</a></li>
+<li>Create new JSON assertion with JSONPath. See <a href="../teststepconfigviews/#json-assertion-editor">JSONPath assertion editor</a></li>
+<li>Create new Image Assertion. See <a href="../teststepconfigviews/#image-assertion-editor">AI based Image Assertions</a></li>
+<li>Create new PDF Assertion. See <a href="../teststepconfigviews/#pdf-assertion-editor">PDF Assertions</a></li>
+<li>Delete selected Assertion(s)</li>
+<li>Rename selected Assertion</li>
+<li>Move up selection in the list</li>
+<li>Move down selection in the list</li>
+<li>Enable/disable: 
+An assertion will only be executed, if it is enabled. A disabled assertion appears with grey text color.</li>
+<li>
+<p>Run (selected assertion or all assertion): 
+This button runs all selected elements in the order they appear. If no assertion is selected, the whole list will be run.</p>
+</li>
+<li>
+<p>List of assertions with current result status</p>
+</li>
+<li>Displays the name of the assertion and the result status</li>
+<li><a href="../pasteboard/">Pasteboard commands</a></li>
+</ul>
+<p>Assertion editor: Empty view in the screenshot, as no Assertion is selected in the list. See details for each type of assertion in the </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

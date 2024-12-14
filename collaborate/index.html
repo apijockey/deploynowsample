@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Collaborate - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../pasteboard/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../releasenotes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#import-and-export-your-test-definitions" class="nav-link">Import and export your test definitions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#import-and-export-options" class="nav-link">Import and export options</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#export-a-selection-of-testcases" class="nav-link">Export a selection of testcases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#export-a-selection-of-testsets" class="nav-link">Export a selection of testsets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#export-a-selection-of-repositories" class="nav-link">Export a selection of Repositories</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#import-testcases" class="nav-link">Import testcases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#import-testsets" class="nav-link">Import testsets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#import-repositories" class="nav-link">Import repositories</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#scope-of-an-export-and-import" class="nav-link">Scope of an export and import</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#options-to-import-soap-requeststests" class="nav-link">Options to import SOAP Requests/tests</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#possible-error-situations" class="nav-link">Possible error situations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sample-scripts-to-export-from-third-party-applications" class="nav-link">Sample scripts to export from third party applications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="import-and-export-your-test-definitions">Import and export your test definitions</h1>
+<p>APIJockey Test helps you define and run your tests. There will be situations where</p>
+<ul>
+<li>you want to share your tests with others or</li>
+<li>want to  run tests in APIJockey Test that you created in other solutions</li>
+</ul>
+<p>This is where import and export of tests comes in handy. The export and import uses a JSON-structure, which is described below in more detail.</p>
+<h2 id="import-and-export-options">Import and export options</h2>
+<p>You can import and export</p>
+<ul>
+<li>A selection of Testcases</li>
+<li>A selection of Testsets</li>
+<li>A selection of Repositories</li>
+</ul>
+<hr />
+<h2 id="export-a-selection-of-testcases">Export a selection of testcases</h2>
+<p>If you want to export a Testcase selection (one or several Testcases), you need to select these Testcases and press</p>
+<p><strong>export selected Testcases</strong>.</p>
+<p><img alt="Screenshot testcase selection with three teststeps and button to export" src="../storage/TestcaseSelectionForExport.png" /> </p>
+<p>When you click the button, a <strong>save as Dialog</strong> appears with a preset filename in the <strong>downloads</strong> folder.</p>
+<p><img alt="screenshot save as dialog" src="../storage/SaveAsDialog.png" /></p>
+<p>After you have confirmed with <strong>save</strong> you will find the JSON-File in the selected folder.</p>
+<hr />
+<h2 id="export-a-selection-of-testsets">Export a selection of testsets</h2>
+<p>The Testset list view can be hidden or displayed by enabling/disabling the toggle element, IF the Repository list view is enabled.
+If you see the dropdown list for your repository selection, this toggle is not visible.
+If you want to export a Testset selection (one or several Testsets), you need to select these Testsets and press <strong>export selected Testsets</strong>.</p>
+<p><img alt="Screenshot Testcase selection with three teststeps and button to export" src="../storage/TestsetSelectionForeExport.png" /> </p>
+<p>When you click the button, a <strong>save as Dialog</strong> appears with a preset filename in the <strong>downloads</strong> folder.</p>
+<p><img alt="screenshot save as dialog" src="../storage/SaveAsDialog.png" /> </p>
+<p>After you have confirmed with <strong>Save</strong> you will find the JSON-File in the selected folder.</p>
+<hr />
+<h2 id="export-a-selection-of-repositories">Export a selection of Repositories</h2>
+<p>If you want to export a Repository selection (on or several Repositories, select these Repositories.</p>
+<p><img alt="Screenshot Testcase selection with three teststeps and button to export" src="../storage/RepositorySelectionForExport.png" /> </p>
+<p>When you click the button, a <strong>save as Dialog</strong> appears with a preset filename in the <strong>downloads</strong> folder. This follows the same rules as for testcases and testsets, but uses the termin <strong>Repository</strong> as the start of the filename.</p>
+<hr />
+<h2 id="import-testcases">Import testcases</h2>
+<p>When you want to import Testcases, you must press the <strong>import elements</strong> button in the Testcase List View</p>
+<p><img alt="screenshot with button import testcases" src="../storage/ImportTestcases.png" /> </p>
+<p>This button makes no distinction of your current selection and would simple add Testcases to the current Testcase list.
+When you press the button, an <strong>Open Dialog</strong> comes up, where you can select any file. A Testcase Decoder will try to read a JSON-structure representing a list of 1 - n Testcases.
+If this is successful, the Testcase will appear in the list with Testcase names prefixed with the filename that you chose.
+Assume we had exported the existing Testcase and would import it back, we would get the following list:</p>
+<p><img alt="screenshot with imported testcasei" src="../storage/ImportedTestcase.png" /> </p>
+<hr />
+<h2 id="import-testsets">Import testsets</h2>
+<p>When you want to import Testsets, you must press the <strong>import elements</strong> button in the Testset List View</p>
+<p>![screenshot with button import testsets] (storage/ImportTestsets.png) </p>
+<p>This import action makes no distinction of your current selection and would simply add Testcases to the current Testcase list.
+When you press the button, an <strong>Open Dialog</strong> comes up, where you can select any file. A Testcase Decoder will try to read a JSON-structure representing a list of 1 - n Testcases.
+If this is successful, the Testsets will appear in the list with Testcase names prefixed by the filename that you chose.
+Assume we had exported the existing Testcase and would import it back, we would get the following list:</p>
+<p><img alt="screenshot with imported testsets" src="../storage/importedTestsets.png" /> </p>
+<hr />
+<h2 id="import-repositories">Import repositories</h2>
+<p>The Repository list view can be displayed as dropdown list or as an editable list view,
+When you want to import Testsets, you must press the <strong>import elements</strong> button in the Testset List View</p>
+<p><img alt="screenshot with button import repositories" src="../storage/ImportRepositories.png" /> </p>
+<p>This import action makes no distinction of your current selection and would simply add Repositories to the current Repository list.
+When you press the button, an <strong>Open Dialog</strong> comes up, where you can select any file. A Repository Decoder will try to read a JSON-structure representing a list of 1 - n Repositories.
+If this is successful, the repositories will appear in the list with Repository names prefixed by the filename that you chose.
+Assume we had exported the existing repository and would import it back, we would get the following list:</p>
+<p><img alt="screenshot with imported repository" src="../storage/importedRepository.png" /> </p>
+<hr />
+<h2 id="scope-of-an-export-and-import">Scope of an export and import</h2>
+<p>The export and import facility will include everything that you can define in the Testdefinition hierarchy</p>
+<ul>
+<li>Variables</li>
+<li>Assertions</li>
+<li>ValueProvider</li>
+<li>ValueTransfers (Link between Variables and ValueProviders</li>
+</ul>
+<p>Not included are these elements</p>
+<ul>
+<li>Service definitions</li>
+<li>Run Environments</li>
+<li>Run Executions</li>
+</ul>
+<p>This means, if you export an HTTP Teststeps and SOAPTeststeps that have a ServiceDefinitionReference, the one that would import it,
+MUST first create these ServiceDefinitions. If not the import reacts as follows:</p>
+<ul>
+<li>An HTTP Teststep will be imported, but without ServiceDefinitionReference</li>
+<li>A SOAP Teststep that does not find a ServiceDefinition will lead to an import failure. See Options to import SOAP Teststeps to understand alternatives and prerequisites.</li>
+</ul>
+<h2 id="options-to-import-soap-requeststests">Options to import SOAP Requests/tests</h2>
+<p>SOAP Requests can be included in HTTP Teststeps and SOAP Teststeps. The basic difference is three degree of support in the test definition</p>
+<ul>
+<li>HTTP Teststeps do not support schema validation</li>
+<li>HTTP Teststeps have no reference to a WSDL</li>
+<li>SOAP Teststeps require this reference and can therefore perform a schema validation</li>
+<li>SOAP Teststeps allow you to define XPath-based validations, which is not available for HTTP Teststeps</li>
+</ul>
+<p>When you import a SOAP Request/Test you will need to decide which Teststep you want to create in APIJockey Test, as the Teststep Decoder identifies the type of Teststeps and creates a new instance of this exact type.</p>
+<hr />
+<p>With these, you may create a custom import or export script to any other third party application. For some of these we provide you sample scripts, for your convenience and without any warrenty or liability.</p>
+<h2 id="possible-error-situations">Possible error situations</h2>
+<p>When you import a JSON that does not conform to the exected input, like:</p>
+<ul>
+<li>You try to import testcases in the testset or repository list or vice versa</li>
+<li>You try to import any JSON structure that does not represent the expected structure</li>
+</ul>
+<p>the import will fail, and eventually report the missing JSON key.</p>
+<hr />
+<p>When you try to import a SOAP Teststeps, the decoder will try to find the referenced WSDL / Binding / SOAP operation in these keys:</p>
+<ul>
+<li><strong>serviceDefinition</strong>, this key must contain a URL that returns the WSDL. This WSDL must be present as  <a href="./views-endpoint.html#wsdlservicedefinition">WSDL Service Definition Content</a> </li>
+<li><strong>wsdlServiceBindingQName</strong>, this key value must contain a QName with the target namespace of the service definition and the Binding name.</li>
+<li><strong>soapoperationQName</strong>, this key value must must contain a QName with the target namespace of the service definition and the soap operation name.</li>
+</ul>
+<p><a name="sampleexportscriptsoapui"/></p>
+<h2 id="sample-scripts-to-export-from-third-party-applications">Sample scripts to export from third party applications</h2>
+<p>You can download a sample groovy script to export SOAP Teststeps to the supported imported/exported JSON-format.</p>
+<p>This script is provided under the <a href="https://opensource.org/license/mit">MIT License (see opensource.org)</a>, please make sure you understand and accept this license, before you use the script.
+Steps to use this script</p>
+<ul>
+<li>You create a groovy script as a teststep in SoapUI or ReadyAPI, and copy the provided groovy script</li>
+<li>Modification details are provided within the script.</li>
+<li>Please understand, this script is made with best intentions to support collaboration, but changes may occur in these third party applications that we are not aware of, you use this script at your own risk.</li>
+</ul>
+<p><a href="../storage/soapuiexport.groovy">soapuiexport groovy script</a></p>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

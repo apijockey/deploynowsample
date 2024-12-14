@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Create your first tests - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../gettingstarted/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../task-createdatabasedtestcase/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#create-an-endpoint-service-definition" class="nav-link">Create an Endpoint Service Definition</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#short-overview-of-the-task" class="nav-link">Short Overview of the task</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-an-endpoint-reference" class="nav-link">Create an Endpoint (reference)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#create-a-test-definition-hierarchy" class="nav-link">Create a Test definition hierarchy</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#create-a-repository" class="nav-link">Create a Repository</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-testset" class="nav-link">Create Testset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-testcase" class="nav-link">Create Testcase</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-an-http-teststep" class="nav-link">Create an HTTP Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-a-soap-teststep" class="nav-link">Create a SOAP Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="create-an-endpoint-service-definition">Create an Endpoint Service Definition</h1>
+<p>An Endpoint (reference) contains the webservice definition, technically. For A SOAP webservice this is the WSDL. </p>
+<h2 id="short-overview-of-the-task">Short Overview of the task</h2>
+<ul>
+<li>Switch to the endpoint view</li>
+<li>Create an endpoint and enter the endpoint-wsdl URL</li>
+<li>Download the WSDL definition</li>
+<li>View the endpoint definition</li>
+<li>Next steps</li>
+</ul>
+<p>If you want to test a SOAP webservice, you need to import the WSDL. This has several reasons</p>
+<ul>
+<li>APIJockey TEST will read all types, operations, port types, messages and bindings provides these information in a searchable view.</li>
+<li>The creation of SOAP Teststep will require you to enter a specific operation. This is the base for the schema validation of your request.</li>
+</ul>
+<h2 id="create-an-endpoint-reference">Create an Endpoint (reference)</h2>
+<p>Start APIJockey TEST in Launchpad <img alt="APIJockey TEST app icon" src="../storage/appIcon%40256.png" />
+You will see the sidebar on the left. On the top just before the colored window handles, you will see the tab bar. When you start APIJockey TEST, the tab <cite>Test defintion</cite> is selected.</p>
+<p><img alt="tabview on sidebar, testdefinition selected" src="../storage/tasks-endpoint-tabview.png" /></p>
+<p>Switch to endpoint definition as shown here:</p>
+<p><img alt="tabview on sidebar, endpoints selected" src="../storage/tasks-endpoint-tabview-endpoint.png" /> </p>
+<p>This view will be empty when you haven't yet imported a WSDL definition.
+We will use an WSDL created by the w3c.org consortium which you can find here and load in your browser.</p>
+<p><cite><a href="http://schemas.xmlsoap.org/ws/2004/09/enumeration/enumeration.wsdl">http://schemas.xmlsoap.org/ws/2004/09/enumeration/enumeration.wsdl</a></cite></p>
+<p>Let's drag the sidebar to the right, this will show the tabs <strong>Endpoint</strong>, <strong>Test Definition</strong> and <strong>Test Execution</strong></p>
+<p><img alt="APIJockey with enlarged sidebar" src="../storage/APIJockey-Sidebar-enlarged.png" /></p>
+<hr />
+<p>Click the Button <strong>New Endpoint Reference</strong></p>
+<p><img alt="Button APIJockey Sidebar new endpoint" src="../storage/APIJockey-Sidebar-New-Endpoint.png" /></p>
+<p>A new modal dialog comes up. Enter the following URL: <em>http://schemas.xmlsoap.org/ws/2004/09/enumeration/enumeration.wsdl</em>. 
+In general the WSDL is passed as an URL-Parameter, but we take the url as provided.
+Add the following data: 
+1 Enter the URL
+2 Tab to next textfield to see a default endpoint name
+3 Make sure the toggle <strong>start download after confirmation</strong> is enabled.
+4  Confirm the dialog with <strong>OK</strong>.</p>
+<p><img alt="Button APIJockey Sidebar new endpoint" src="../storage/APIJockey-Sidebar-NewEndpoint-DialogInput.png" /></p>
+<hr />
+<p>The Application will download the WSDL data and display a new entry unter <em>Endpoints</em> with the endpoint name you entered. The first part is done. 
+When you select an endpoint and click the tab <em>types</em> you will see the list of XSD files that imported to or included in the WSDL. You can select each of them, read them and search within them</p>
+<p><img alt="Endpoint dialog dialog" src="../storage/APIJockey-Sidebar-Endpoint-Typesview.png" /></p>
+<p>When you select an endpoint and click the tab <em>Textview</em> you will see original the WSDL. You can search here as well.</p>
+<hr />
+<p>Once you have an Endpoint (reference), you will be able to create a SOAP Teststep. You have the option to create SOAP and HTTP-Teststeps without endpoint references; These teststeps will not support WSDL schema definitions and Run Environment settings.</p>
+<p>See  <a href="../concepts/#test-definition">Testdefinition</a> and <a href="../conceptual-runenvironment/">Run Environment</a></p>
+<h1 id="create-a-test-definition-hierarchy">Create a Test definition hierarchy</h1>
+<p>When you work with a large number of webservices, with various releases, you will find it necessary to organize your tests in a structured, hierarchical way.</p>
+<p>API-Jockey organizes tests in a hierarchy of 
+- Repository lists
+- Testset lists
+- Testcase lists and 
+- Teststep lists.</p>
+<p>Here, we will walk through the creation of such a Test definition hierarchy to get you started.</p>
+<ul>
+<li>A Repository, see </li>
+<li>A Testset</li>
+<li>A Testcase</li>
+</ul>
+<p>These tree elements are mandatory for creating teststeps. APIJockey TEST provides several types of Teststeps. See more in <a href="views-teststeplist.html">View Teststep list</a></p>
+<hr />
+<h2 id="create-a-repository">Create a Repository</h2>
+<p>When you launch APIJockey TEST you will see a number of views. We will walk through some of these views in this tutorial. </p>
+<p><img alt="Button APIJockey Sidebar new Repository" src="../storage/APIJockey-Sidebar-Definition-NewRepository.png" /></p>
+<p>Click on the button <strong>Create new Repository</strong> to create a new Repository. This will open a dialog where you must enter the name of the new Repository. We enter the name <strong>Enumerations</strong></p>
+<p><img alt="Button APIJockey Sidebar new Repository name" src="../storage/APIJockey-Sidebar-Definition-NewRepositoryDialog.png" /></p>
+<hr />
+<p>Enter a unique name for the Test Repository. We'll call it <em>Enumerations</em>.Confirm with <strong>OK</strong>. You can rename the repository at any later point in time. You will get the following view: </p>
+<p><img alt="screenshot repository view with toggle show repository view is on" src="../storage/Repositoryview-WithToggleOn.png" /></p>
+<p>As you can see the toggle <strong>Edit repositories</strong> has become available, since there is a repository selected. You use this option, when you need to work on your Repository list.
+Untoggle the option Edit repositories**, this will disclose the repository list. You can switch between the repository be selection one of them from dropdown list:</p>
+<p><img alt="screenshot repository view with toggle show repository view is off" src="../storage/Repositoryview-WithToggleOff.png" /></p>
+<hr />
+<h2 id="create-testset">Create Testset</h2>
+<p>You are ready to create your first Testset. click with your mouse on the Button <strong>new Testset</strong>.</p>
+<p><img alt="Empty Testset" src="../storage/APIJockey-Sidebar-Definition-testset-empty.png" /></p>
+<p>This opens a new dialog, enter <strong>folder</strong> as the testset name.
+Select the new testset and make sure, the Testcase/Teststep list is visible.
+The testcase view shows the testcases associated with the currently selected testset, which is an empty list for now.</p>
+<p><img alt="Dialog create testset" src="../storage/Tasks-testdefinition-folderselected.png" /></p>
+<hr />
+<h2 id="create-testcase">Create Testcase</h2>
+<p>To create a new Testcase click the <cite>+</cite> (new Testcase)</p>
+<p><img alt="Button new testcase" src="../storage/Tasks-testdefinition-emptytestcaselist-newtestcase.png" /></p>
+<p>Drag the lower right edge of the dialog more to the right to get more space for the name. Enter the name <em>Sample Testcase.</em>Confirm with <strong>OK</strong>.</p>
+<p><img alt="Button new testcase" src="../storage/APIJockey-Testcase-New-Dialog.png" /></p>
+<hr />
+<p>Now, you have a completed Testdefinition hierarchy and can start creating teststeps.
+You may continue reading with:</p>
+<ul>
+<li><a href="task-create-DatabasedTestcase.html">Create a Databased testcase</a></li>
+<li><a href="task-create-httpteststep.html">Create an HTTP Teststep</a></li>
+<li><a href="task-create-soapteststep.html">Create a SOAP Teststep</a></li>
+<li><a href="task-create-randomizteststep.html">Create a Randomize Teststep</a></li>
+<li><a href="task-create-tabulardatavaluelist-teststep.html">Create a Tabulardata Valuelist Teststep</a></li>
+<li><a href="task-create-manualtabulardatavaluelist-teststep.html">Create a Manual Valuelist Teststep</a></li>
+<li><a href="views-datatransferteststep.html">View Datatransfer Teststep</a></li>
+</ul>
+<h2 id="create-an-http-teststep">Create an HTTP Teststep</h2>
+<p>A HTTP teststep performs URL requests for various HTTP methods with or without body JSON data.</p>
+<h3 id="prerequisites-to-create-an-http-teststep">Prerequisites to create an HTTP Teststep</h3>
+<ul>
+<li><a href="./task-create-testdefinition.html#CreateRepository">Create a Repository</a></li>
+<li><a href="./task-create-testdefinition.html#CreateTestset">Create a Testset </a></li>
+<li><a href="./task-create-testdefinition.html#CreateTestcase">Create a Testcase</a></li>
+<li>You have selected a testcase</li>
+</ul>
+<h3 id="steps-to-create-an-http-teststep">Steps to create an HTTP Teststep</h3>
+<p><img alt="Button to create a HTTPTeststep" src="../storage/HTTPteststep-create-with-button.png" /></p>
+<hr />
+<p>The <em>globe</em> icon-ed button creates a new HTTP Teststep.</p>
+<p>This opens a dialog, which asks you to enter a name for the new teststep. Click cancel, if you changed your mind and don't want to create a HTTP teststep any more.</p>
+<p><img alt="Screenshot enter teststep name" src="../storage/HTTPteststep-entername.png" /></p>
+<hr />
+<p>When you confirm with <strong>OK</strong>, the teststep will be created and is visible in the teststep list.</p>
+<p><img alt="Teststep list" src="../storage/HTTPTeststep-teststeplist.png" /></p>
+<p>See details to configure and run your HTTP Teststep in <a href="./views-httpteststep.html">HTTP Teststep View</a>
+Learn about using Run Environments in <a href="./conceptual-runenvironment.html">Run Environments</a></p>
+<h2 id="create-a-soap-teststep">Create a SOAP Teststep</h2>
+<p>A SOAP teststep performs sends a SOAP/XML payload (Request) to a specified URL and waits for the SOAP/XML response payload</p>
+<h3 id="prerequisites-to-create-a-soap-teststep">Prerequisites to create a SOAP Teststep</h3>
+<ul>
+<li><a href="./task-create-testdefinition.html#CreateRepository">Create a Repository</a></li>
+<li><a href="./task-create-testdefinition.html#CreateTestset">Create a Testset </a></li>
+<li><a href="./task-create-testdefinition.html#CreateTestcase">Create a Testcase</a></li>
+<li>You have selected a testcase</li>
+</ul>
+<p>Select the new test case. Then move the mouse down to the <em>teststeps list </em>. Click the Button <strong>Create new SOAP Teststep</strong></p>
+<p><img alt="Button new SOAP Teststep" src="../storage/APIJockey-Teststeps-NewSoaptest.png" /></p>
+<ul>
+<li>Enter a unique teststep name <em>EnumerateOp</em></li>
+<li>disclose the soap endpoint operation list for <em>enumeration.wsdl</em></li>
+<li>Select <strong>EnumerateOp</strong> from the list.</li>
+<li>Confirm the dialog with <strong>OK</strong></li>
+</ul>
+<p><img alt="Button new SOAP Teststep Dialog" src="../storage/APIJockey-Teststeps-SOAPRequestNewDialog.png" /></p>
+<p>APIJockey TEST has created a starter request for you.Next, move the separator line between request window and Test list window to the left as much as possible (1) and (2) drag the separator line between request and response fully to the right.</p>
+<p><img alt="Hide Sidebar in Menu View&quot;" src="../storage/APIJockey-View-MaximizeRequestWindow.png" /></p>
+<p>Now, it may make sense to further increase the request window size. Go the Menu <em>View</em>and toogle <em>Hide Sidebar</em>. This makes the sidebar invisible.</p>
+<p><img alt="Hide Sidebar in Menu View&quot;" src="../storage/APIJockey-View-HideSidebar.png" />
+Congratulations, you have your first request. In real life, you would have to </p>
+<ul>
+<li>provide a Service Url in (1)</li>
+<li>set authentication data or remove basic authentication.</li>
+<li>Verify the Test step config settings in (3)</li>
+<li>Run the SOAP Request</li>
+<li>Review errors in (5)</li>
+</ul>
+<p><img alt="Screenshot SOAP request settings" src="../storage/APIJockey-SOAPRequest-Settings.png" /></p>
+<p>Learn about using Run Environments in <a href="./conceptual-runenvironment.html">Run Environments</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

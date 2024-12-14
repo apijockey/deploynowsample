@@ -43,8 +43,72 @@
                             <li class="nav-item">
                                 <a href="." class="nav-link active" aria-current="page">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="about/" class="nav-link">About</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="concepts/" class="dropdown-item">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -60,7 +124,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="about/" class="nav-link">
+                                <a rel="next" href="concepts/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -82,13 +146,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
+            <li class="nav-item" data-bs-level="1"><a href="#apijockey-test-online-help" class="nav-link">APIJockey TEST Online Help</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-bs-level="2"><a href="#important-features" class="nav-link">Important features</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            <li class="nav-item" data-bs-level="2"><a href="#whats-new" class="nav-link">What's new</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#user-guides" class="nav-link">User Guides</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reference" class="nav-link">Reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tutorials" class="nav-link">Tutorials</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -99,21 +175,49 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="apijockey-test-online-help">APIJockey TEST Online Help</h1>
+<p>APIJockey TEST will help you assess and verify web services responses and automate this assessment.</p>
+<h2 id="important-features">Important features</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Import and view WSDL definitions</li>
+<li>Run data-based Testcases</li>
+<li>A full featured WSDL schema validation</li>
+<li>MTOM-Support for SOAP request and SOAP response</li>
+<li>Syntax Highlighting for XML, JSONPath and JSON</li>
+<li>Randomized value lists and data type specific ranges</li>
+<li>Data transfer with XPath, XQuery and JSONPath</li>
+<li>Assertions with XPath and JSONPath</li>
+<li>Business test friendly assertion support to reduce detailed knowledge about query-languages like XPath and JSONPath</li>
+<li>Variables support for requests, urls, XPath, JSONPath and XQuery expressions</li>
+<li>Run Environment support to centralize authentication and URL-information</li>
+<li>Instant Test runs</li>
+<li>Persist test executions with comprehensive storage of test step details</li>
+<li>Backup and share repository snapshots (requires Sign-in and a paying subscription).</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h2 id="whats-new">What's new</h2>
+<p>APIJockey TEST received a substantial update for tabular data in both the views and the editors.</p>
+<h2 id="user-guides">User Guides</h2>
+<ul>
+<li><a href="concepts/">Concepts</a></li>
+<li><a href="conceptual-databasedTestcase/">Data based test</a></li>
+<li><a href="conceptual-runenvironment/">Run environments</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="views-repositories-testsets/">Test hierarchy views</a></li>
+<li><a href="views-teststeps/">Testep views</a></li>
+<li><a href="teststepconfigviews/">Configuration views and editors</a></li>
+<li><a href="pasteboard/">Copy and Paste</a></li>
+<li><a href="collaborate/">Collaborate</a></li>
+<li><a href="releasenotes/">Release notes</a></li>
+</ul>
+<h2 id="tutorials">Tutorials</h2>
+<ul>
+<li><a href="gettingstarted/">Getting started</a></li>
+<li><a href="task-create-testdefinition/">Create your first tests</a></li>
+<li><a href="task-createdatabasedtestcase/">Create databased testcase</a></li>
+<li><a href="task-create-valuelist-teststeps/">Random test data support</a></li>
+</ul></div>
             </div>
         </div>
 
@@ -195,5 +299,5 @@ docs/
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2024-12-02 21:37:39.011024+00:00
+Build Date UTC : 2024-12-14 11:34:39.824271+00:00
 -->

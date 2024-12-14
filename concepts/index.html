@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Concepts - ApiJockey TEST Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xpath.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/jsonpath.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">ApiJockey TEST Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">User Guide</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-databasedTestcase/" class="dropdown-item">Data based test</a>
+</li>
+                                    
+<li>
+    <a href="../conceptual-runenvironment/" class="dropdown-item">Run environments</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../views-repositories-testsets/" class="dropdown-item">Test hierarchy views</a>
+</li>
+                                    
+<li>
+    <a href="../views-teststeps/" class="dropdown-item">Testep views</a>
+</li>
+                                    
+<li>
+    <a href="../teststepconfigviews/" class="dropdown-item">Configuration views and editors</a>
+</li>
+                                    
+<li>
+    <a href="../pasteboard/" class="dropdown-item">Copy and Paste</a>
+</li>
+                                    
+<li>
+    <a href="../collaborate/" class="dropdown-item">Collaborate</a>
+</li>
+                                    
+<li>
+    <a href="../releasenotes/" class="dropdown-item">Release notes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutorials</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gettingstarted/" class="dropdown-item">Getting started</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-testdefinition/" class="dropdown-item">Create your first tests</a>
+</li>
+                                    
+<li>
+    <a href="../task-createdatabasedtestcase/" class="dropdown-item">Create databased testcase</a>
+</li>
+                                    
+<li>
+    <a href="../task-create-valuelist-teststeps/" class="dropdown-item">Random test data support</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../conceptual-databasedTestcase/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#apijockey-test-concepts" class="nav-link">APIJockey TEST concepts</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#instant-test-runs" class="nav-link">Instant test runs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#test-executions" class="nav-link">Test executions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#test-definition" class="nav-link">Test definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#repository" class="nav-link">Repository</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testset" class="nav-link">Testset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testcase" class="nav-link">Testcase</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#teststep" class="nav-link">Teststep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#variables" class="nav-link">Variables</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#variable-types" class="nav-link">Variable types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#create-a-variable" class="nav-link">Create a Variable</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#access-variable-values" class="nav-link">Access Variable values</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#variable-access-syntax" class="nav-link">Variable access syntax</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#variablevaluetransfer" class="nav-link">VariableValueTransfer</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#attachment-placeholders" class="nav-link">Attachment placeholders</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#static-and-variable-test-data" class="nav-link">Static and variable test data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#response-data-and-derived-data" class="nav-link">Response Data and Derived data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#random-data" class="nav-link">Random Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="apijockey-test-concepts">APIJockey TEST concepts</h1>
+<p>APIJockey TEST is a test application. It's primary purpose is to test webservices. Webservices have been around for a long time now, starting with SOAP whereas current implementations focus on JSON-based implmentations with or withour a REST architecture.
+Testing web services is not an easy task, there is no user interface, there is no backing process, data models use keys and reference ids. Creating valid requests is time-consuming and verifying responses is evenharder.
+APIJockey TEST will help you create requests, assess and verify web services responses and automate this assessment to a certain degree.
+All information is stored in a SQLite database and backed by iCloud integration, which ensures you can access your data from different MacOS &reg; computers.</p>
+<ol>
+<li>instant test runs</li>
+<li>Persisted Test executions</li>
+</ol>
+<h2 id="instant-test-runs">Instant test runs</h2>
+<p>This test is available on all four test definition hierarchies.</p>
+<ul>
+<li><a href="#repository">Repository</a></li>
+<li><a href="#testset">Testset</a></li>
+<li><a href="#testcase">Testcase</a></li>
+<li><a href="#teststep">Teststep</a></li>
+</ul>
+<p>All <cite>test runnable</cite> elements provide a play button that starts the test run.
+A result status icon provides visible information of the test result status.</p>
+<p><img alt="visualization test run results for teststeps" src="../storage/concepts-teststeplist-testrunresult.png" /></p>
+<p><em>Above: screenshot of the teststep action buttons with test run result icon</em></p>
+<h1 id="test-executions">Test executions</h1>
+<p>Test executions are persisted test runs. They can be started from the repository or testset list view and perform basically the same test operations as an instant test run. The difference is that the test execution results are persisted and can be accessed at any point in time. This gives you a great opportunity to get back to previous runs and compare requests and responses.</p>
+<p><img alt="conceptual testexecution overview" src="../storage/concepts-testexecution-overview.png" /></p>
+<p><em>Above: screenshot of the test execution view</em> 
+When you select a test execution, you will see the list of testcase executions and teststeps execution, drilled down to each indivudal Random and Teststep Value Provider output value.</p>
+<h2 id="test-definition">Test definition</h2>
+<p>APIJockey TEST to organize tests in a <a href="../views-repositories-testsets/">test definition hierarchy</a>.
+A test definition describes a test case with its test steps and the assertions defined on the teststeps.
+That means, a test case can be passed in a test run only, when all teststeps can be run through and all assertions have passed.</p>
+<h2 id="repository">Repository</h2>
+<p>First step in the test definition is the creation of a repository. You can create as many repositories as you want. A Repository contains a structure of test cases AND you can execute the contained testcases.Repositories are intended to support several container types, although APIJockey TEST currently supports one local SQLLite (technically CoreData) database, only. They help you group your tests and support persisted test executions.</p>
+<p>See, how to <a href="../task-create-testdefinition/#create-a-test-definition-hierarchy">create a test definition</a> 
+Organize your repostories in the <a href="../views-repositories-testsets/#repository-list-view">Repository list view</a></p>
+<h2 id="testset">Testset</h2>
+<p>Once you have created a repository, you start to create Testsets. Testsets contain the actual Testcases. Testsets can be applied for various differenciations like use cases, types of tests (regression tests, new development). 
+Testing includes several tasks, such as:</p>
+<ul>
+<li>
+<p>regressions testing</p>
+</li>
+<li>
+<p>test new functionality</p>
+</li>
+<li>
+<p>exploration testing</p>
+</li>
+<li>
+<p>persisted test run executions</p>
+</li>
+<li>
+<p>Testsets will help you to organize large sets of Testcases. Find help to manage your testsets in Testset list view </p>
+</li>
+<li>
+<p>Testsets should not be used to differenciate test environments. </p>
+</li>
+<li>
+<p>Testsets make also sense, when Testcases use common variable data. </p>
+</li>
+</ul>
+<p>Find help to manage your testsets in the <a href="../views-repositories-testsets/#testset-list-view">Testset list view</a></p>
+<h2 id="testcase">Testcase</h2>
+<p>A testcase
+ - represents what you want to test.</p>
+<ul>
+<li>
+<p>defines the teststeps, the assertions and validations to test a functionality.</p>
+</li>
+<li>
+<p>can include several endpoints</p>
+</li>
+<li>
+<p>can run with  randomized data and capture data from its test steps</p>
+</li>
+<li>
+<p>has run successfully, if all Teststeps have run successfully.
+There are two types of testcases:</p>
+</li>
+<li>A testcase that runs each teststep once.</li>
+<li>A data based testcase that runs teststeps based on a set of input data for each entry in this data set. </li>
+</ul>
+<p>Find help to manage your testcases in <a href="../views-repositories-testsets/#testcase-list-view">Testcase list view</a>)
+You define the actual Testcase on a Testset. You can create an arbitrary number of Testcases on a Testset.</p>
+<h2 id="teststep">Teststep</h2>
+<p>APIJockey TEST supports a numbe of teststeps that you can create and arrange however you like and need to
+A Teststep is a concrete step in you Testcase run. 
+ - You run a SOAPTeststep or HTTPTeststep to send a request and receive a response. 
+ - You may assert this response. 
+ - You may tranfer response information to a variable which in turn is a prerequisite of subsequent teststeps.
+Each of these teststeps has configuration options, see how to create: </p>
+<ul>
+<li>
+<p><a href="../task-create-testdefinition/#create-an-http-teststep">HTTP Teststep</a></p>
+</li>
+<li>
+<p><a href="../task-create-testdefinition/#create-a-soap-teststep">SOAP Teststep</a></p>
+</li>
+<li>
+<p><a href="../task-create-valuelist-teststeps/#create-a-manual-randomizedvaluelist-teststep">Manual RandomizedValuelistTeststep</a></p>
+</li>
+<li>
+<p><a href="../task-create-valuelist-teststeps/#create-a-randomize-teststep-with-a-random-value-provider">RandomizeTeststep</a></p>
+</li>
+<li>
+<p><a href="../task-create-valuelist-teststeps/#create-a-randomizedvaluelist-teststep">RandomizedValuelistTeststep</a></p>
+</li>
+</ul>
+<p>Organize your tests in the <a href="../views-repositories-testsets/#teststep-list-view">Teststep list view</a></p>
+<ul>
+<li>
+<p>Manage your View RandomizedValuelistTeststep</p>
+</li>
+<li>
+<p>Manage your View Manual RandomizedValuelistTeststep</p>
+</li>
+<li>
+<p>Manage your View DatatransferTeststep</p>
+</li>
+</ul>
+<p>These teststeps can be combined. You can even define data input teststeps that allow you to iterate over a set of data.
+The following sample demonstrate a set of  web service  eststeps, together with a Datatransferteststep and a Randomizeteststep.</p>
+<ul>
+<li>
+<p>The <strong>Data Loop Input Teststep</strong> defines a set of data to iterate over.</p>
+</li>
+<li>
+<p><strong>getData</strong> requests data from a web service</p>
+</li>
+<li>
+<p><strong>transfer</strong> retrieves response data and stores them in variables.</p>
+</li>
+<li>
+<p><strong>randomize dates</strong> provides random dates (effective dates)</p>
+</li>
+<li>
+<p><strong>getChange</strong> requests a quote for change to an existing contract</p>
+</li>
+<li>
+<p><strong>setChangeTransfer</strong> provides data from <strong>getChange</strong> to <strong>setChange</strong></p>
+</li>
+<li>
+<p><strong>setChange</strong> requests the actual change on the existing contract</p>
+</li>
+<li>
+<p><strong>StatusSetChange</strong> store response data for the final step</p>
+</li>
+<li>
+<p><strong>Data Loop Result Teststep</strong> stores the current loop results in an internal table that may be exported on user request.</p>
+</li>
+</ul>
+<p><em>All this without ANY coding.</em>
+<img alt="conceptual testexecution overview" src="../storage/conceptual-teststeplist.png" /></p>
+<h1 id="variables">Variables</h1>
+<p>A Variable holds a persisted value. It is intended to reuse data acroll test hierarchies and elements.</p>
+<h3 id="conceptual-overview">Conceptual Overview</h3>
+<p>A Variable can be defined for the four following test definition hierarchy elements. A Variable name must be unique for an element it is assigned to.</p>
+<h3 id="variable-holder-types">Variable Holder types</h3>
+<p>Variables can be assigned to these four test definition elements, sometimes referred to as <em>holder types</em>
+- Repository</p>
+<ul>
+<li>
+<p>Testset</p>
+</li>
+<li>
+<p>Testcase</p>
+</li>
+<li>
+<p>Teststep</p>
+</li>
+</ul>
+<h2 id="variable-types">Variable types</h2>
+<p>The variable type depends on the selected tab in the editor:
+- <strong>String</strong>  Arbitrary Text</p>
+<ul>
+<li>
+<p><strong>Password</strong>  Any text. This types hides the value in the variable list view and during edits and be undisclosed on demand</p>
+</li>
+<li>
+<p><strong>absolute Date</strong> Enter a static date to reproduce tests. The Variable Editor provides a convenient means to enter the date and formatting for the service call.</p>
+</li>
+<li>
+<p><strong>relative Date</strong> Creates a date relative to the current date. On Test runs, this relative is <strong>re-evaluated</strong> .This allows you to enter a date of birth or a date of manufacturing and make sure the webservice under test will always calculate the same age.</li></p>
+</li>
+<li>
+<p><strong>Number</strong>  Numbers need specific formatting. This formatting is provided for variables of type number</p>
+</li>
+<li>
+<p><strong>Boolean</strong> Booleans have 0 / 1 values. The variable editor allows use of true/false or yes/no as text for the boolean values.</p>
+</li>
+</ul>
+<h2 id="create-a-variable">Create a Variable</h2>
+<p>Variables can be created on two different places:</p>
+<ul>
+<li>
+<p>In the variables view, this is explained in <a href="../teststepconfigviews/#view-variables">Variables View</a></p>
+</li>
+<li>
+<p>In the variables assignment view on Teststep ValueProviders and Random ValueProvider</p>
+</li>
+</ul>
+<h2 id="access-variable-values">Access Variable values</h2>
+<p>Variable placeholders are simply substituted by their current values, just like a makro.
+  Variable values can be used in these contexts:</p></p>
+<ul>
+<li>
+<p>SOAP/HTTP Requests</p>
+</li>
+<li>
+<p>URLs of the SOAP Request</li></p>
+</li>
+<li>
+<p>XPath expression for Assertions and ValueProviders</p>
+</li>
+<li>XQuery expressions for ValueProviders</li>
+</ul>
+<h2 id="variable-access-syntax">Variable access syntax</h2>
+<ul>
+<li>
+<p>Teststep variables: <strong>$(Teststep.&lt;variablename&gt;)</strong></p>
+</li>
+<li>
+<p>Teststep variables: <strong>$(Testcase.&lt;variablename&gt;)</strong></p>
+</li>
+<li>
+<p>Testset variables: <strong>$(Testset.&lt;variablename&gt;)</strong></p>
+</li>
+<li>
+<p>Repository variables: <strong>$(Repository.&lt;variablename&gt;)</strong></p>
+</li>
+</ul>
+<h1 id="variablevaluetransfer">VariableValueTransfer</h1>
+<p>When you want to update your variable from within a test step, you will use a <a href="../teststepconfigviews/#variablevaluetransfer">VariableValueTransfer</a>, they are the  common component for ValueProviders to transfer data to a variable of type String.</p>
+<h2 id="attachment-placeholders">Attachment placeholders</h2>
+<p>Attachment placeholders in SOAP Requests are not variables and use a special, but similar naming convention. see <a href="../teststepconfigviews/#soap-attachments">SOAP Attachments</a>
+VariableValueTransfers are used among these teststeps to configure the output variable:</p>
+<ul>
+<li><a href="../teststepconfigviews/#datatransfer-teststep">DatatransferTeststep</a> </li>
+<li><a href="../views-teststeps/#view-randomizeteststep">RandomizeTeststep</a></li>
+<li><a href="../views-teststeps/#randomizedvaluelist-teststep-view">RandomizedValuelistTeststep</a></li>
+<li><a href="../views-teststeps/#manual-randomizedvaluelistteststep-view">Manual RandomizedValuelistTeststep</a></li>
+</ul>
+<h2 id="static-and-variable-test-data">Static and variable test data</title></h2>
+<p>User data, response data, derived data and random data are available for your test
+The most common type of data is user data, ie data that the user enters. A user will enter request data in the request editor.i</p>
+<p><img alt="static data in request" src="../storage/conceptual-testdata-soaprequest-manualuserdata.png" /></p>
+<p>This approach is valid until request data are repeated for several tests and a change in the webservice definition, such as key lists or expected value, would mean a lot of rework. This is, where variables come into the game.
+<img alt="variable data in request" src="../storage/conceptual-testdata-soaprequest-variableuserdata.png" /></p>
+<h2 id="response-data-and-derived-data">Response Data and Derived data</h2>
+<p>A Webservice is - in general - expected to return values, there may be negative test cases, though. You can access both - request and response data - from a  teststep to feed a variable, as shown above, serves as input. APIJockey.com gives two options to to access request and response data:</p>
+<ul>
+<li>
+<p>XPath</p>
+</li>
+<li>
+<p>XQuery</p>
+</li>
+<li>
+<p>JSONPath</p>
+</li>
+</ul>
+<p>In the request, derived data is just a variable as above.
+XQuery allows for arbitrary transformations of request and response data, so if you need to test several Web services that expect different contents, XQuery is your choice.
+XPath, XQuery and JSONPath can be used within <cite>DatatransferValueProviders</cite>, which in turn are part of Datatransferteststeps.</p>
+<h2 id="random-data">Random Data</h2>
+<p>APIJockey TEST provides a Randomteststep that allows for randomized data. You can create a list of random value providers without any coding. Typical examples are number plates or Vehicle Identification numbers where you may use a calculated String to create the random value. In the request, this is just a variable as above.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
