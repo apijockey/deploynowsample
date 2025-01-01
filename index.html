@@ -424,7 +424,7 @@
         
   
   <span class="md-ellipsis">
-    Testep views
+    Teststep views
   </span>
   
 
@@ -742,22 +742,26 @@
 <h2 id="important-features">Important features</h2>
 <ul>
 <li>Import and view WSDL definitions</li>
-<li>Run data-based Testcases</li>
+<li>instant test runs on your current selection</li>
+<li>Run data-based testcases</li>
 <li>A full featured WSDL schema validation</li>
 <li>MTOM-Support for SOAP request and SOAP response</li>
 <li>Syntax Highlighting for XML, JSONPath and JSON</li>
 <li>Randomized value lists and data type specific ranges</li>
 <li>Data transfer with XPath, XQuery and JSONPath</li>
-<li>Assertions with XPath and JSONPath</li>
+<li>Assertions with XPath, JSONPath or Javascript </li>
 <li>Business test friendly assertion support to reduce detailed knowledge about query-languages like XPath and JSONPath</li>
-<li>Variables support for requests, urls, XPath, JSONPath and XQuery expressions</li>
-<li>Run Environment support to centralize authentication and URL-information</li>
-<li>Instant Test runs</li>
+<li>Run Environment support to centralize authentication and URL-information </li>
+<li>Variables and Run Environment variables support for requests, urls, XPath, JSONPath and XQuery expressions</li>
 <li>Persist test executions with comprehensive storage of test step details</li>
-<li>Backup and share repository snapshots (requires Sign-in and a paying subscription).</li>
+<li>Builtin iCloud-synchronization support of your configuration and definitions for all your MacOS devices</li>
+<li>Share your definitions with a comprehensive set of import and export features</li>
 </ul>
 <h2 id="whats-new">What's new</h2>
-<p>APIJockey TEST received a substantial update for tabular data in both the views and the editors.</p>
+<p>Support for <em>EnvironmentVariables</em>
+An EnvironmentVariable stores a value for a RunEnvironment. You may want to store usernames in a run environment or use different static data in your request for different RunEnvironments. See more in <a href="conceptual-runenvironment/#run-environment-variables">EnvironmentVariables</a> </p>
+<p>New teststep type <em>HTMLTeststep</em>
+an HTMLTeststep loads a website and displays the contents in a browser window. This is helpful, when you test web services postprocesing. You may visually check the website content or create a list of Javascript-based assertions on the webpage. See more in <a href="views-teststeps/#html-teststep-view">HTMLTeststep</a></p>
 <h2 id="user-guides">User Guides</h2>
 <ul>
 <li><a href="concepts/">Concepts</a></li>
@@ -767,7 +771,7 @@
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="views-repositories-testsets/">Test hierarchy views</a></li>
-<li><a href="views-teststeps/">Testep views</a></li>
+<li><a href="views-teststeps/">Teststep views</a></li>
 <li><a href="teststepconfigviews/">Configuration views and editors</a></li>
 <li><a href="pasteboard/">Copy and Paste</a></li>
 <li><a href="collaborate/">Collaborate</a></li>

@@ -310,9 +310,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#run-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Environment Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#use-run-environments-for-your-teststeps" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Run Environments for your Teststeps
+      Use Run Environments for your teststeps
     </span>
   </a>
   
@@ -419,7 +428,7 @@
         
   
   <span class="md-ellipsis">
-    Testep views
+    Teststep views
   </span>
   
 
@@ -682,9 +691,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#run-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Environment Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#use-run-environments-for-your-teststeps" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Run Environments for your Teststeps
+      Use Run Environments for your teststeps
     </span>
   </a>
   
@@ -758,7 +776,23 @@
 <p>User information for authentication may vary. Users in lower environments may be exchanged by production-similiar users in higher environments.</p>
 </li>
 </ul>
-<h2 id="use-run-environments-for-your-teststeps">Use Run Environments for your  Teststeps</h2>
+<h2 id="run-environment-variables">Run Environment Variables</h2>
+<p>Run environments can hold a list of variables with specific values for the run environment.
+You may want to use different request parameters for a developers' test environment than for a business test environment or staging environment. 
+Run environment variables are resolved for:
+- requests and 
+- urls
+The syntax to referencing them in your test definition is pretty simple:
+<strong>$(EnvironmentVariable.<Name>)</strong>. 
+A Run environment variable name must be unique for a Run environment,the list editor will mark duplicate entries as <strong>duplicate key</strong> in the <strong>name</strong> column.</p>
+<p><img alt="Run Environment variables list" src="../storage/RunEnvironmentVariables.png" /></p>
+<p>There are two actions available:</p>
+<ul>
+<li><strong>add</strong> a new Run Environment variable</li>
+<li><strong>delete</strong> selected Run Environment variables for this Run Environment</li>
+</ul>
+<hr />
+<h2 id="use-run-environments-for-your-teststeps">Use Run Environments for your teststeps</h2>
 <p>Typically you start by importing or creating a service definition (WSDL, Manual HTTP Service). These service definition hold in general all information that are independent of Run Environments.</p>
 <ul>
 <li>
