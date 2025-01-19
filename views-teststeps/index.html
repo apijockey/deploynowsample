@@ -14,7 +14,7 @@
         <link rel="prev" href="../views-repositories-testsets/">
       
       
-        <link rel="next" href="../teststepconfigviews/">
+        <link rel="next" href="../servicedefinitions/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#html-teststep-view" class="md-skip">
+        <a href="#teststeps" class="md-skip">
           Skip to content
         </a>
       
@@ -111,6 +111,43 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
   </nav>
@@ -391,14 +428,65 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html-javascript-assertion" class="md-nav__link">
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-teststep" class="md-nav__link">
     <span class="md-ellipsis">
-      HTML Javascript Assertion
+      HTTP Teststep
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soap-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomize-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomize Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomized-valuelist-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomized Valuelist Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-randomized-valuelist-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Randomized Valuelist Teststep
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -406,6 +494,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../servicedefinitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Service Definitions
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -661,14 +770,65 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html-javascript-assertion" class="md-nav__link">
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-teststep" class="md-nav__link">
     <span class="md-ellipsis">
-      HTML Javascript Assertion
+      HTTP Teststep
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soap-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomize-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomize Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomized-valuelist-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomized Valuelist Teststep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-randomized-valuelist-teststep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Randomized Valuelist Teststep
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -687,11 +847,28 @@
                   
 
 
+<h1 id="teststeps">Teststeps</h1>
+<p>There are several teststeps available whick you can create from the <a href="../views-repositories-testsets/#teststep-list-view">teststep list</a></p>
+<h2 id="overview">Overview</h2>
+<p>This overview helps you navigate on this page and understand the features of each teststep:</p>
+<h3 id="http-teststep">HTTP Teststep</h3>
+<p>An HTTP Teststep allows you to send a HTTP request for several HTTP methods such as GET, POST and PUT. Additionally, you may send JSON or XML in the HTTP-Body. See more in <a href="#http-teststep-view">HTTP Teststep View</a></p>
+<h3 id="html-teststep">HTML Teststep</h3>
+<p>An HTML teststep loads a website and displays the contents in a browser window. This is helpful, when you test web services postprocesing. You may visually check the website content or create a list of Javascript-based assertions on the webpage. See more in <a href="#html-teststep-view">HTML Teststep View</a>   </p>
+<h3 id="soap-teststep">SOAP Teststep</h3>
+<p>A SOAP Teststep is a WSDL-aware teststep that reference a specific webservice method.
+You have request and response area with various that help you manage the complexity of SOAP-XML data models based on WSDL-XSD-Schema definition. See more in <a href="#soap-teststep-view">SOAP Teststep View</a> </p>
+<h3 id="randomize-teststep">Randomize Teststep</h3>
+<p>A Randomize Teststep defines rules or data to randomize your request input. This is a common strategy in testing to have variants of you request to make sure you'll find gaps in the implementation. A common pitfall in webservice testing is to rely on a small set of regression tests with a static set of input data. 
+The Randomize Teststep includes a list of Random Value Providers to serve random data, like <strong>random strings</strong> and <strong>random locations</strong>. See more in <a href="#randomize-teststep-view">Randomize Teststep View</a>. See the tutorial <a href="../task-create-valuelist-teststeps/#create-a-randomize-teststep-with-a-random-value-provider">Create a Randomize Teststep with a Random Value Provider</a> to learn how to this teststep to create a random <em>Vehicle Identifier Number</em>.</p>
+<h3 id="randomized-valuelist-teststep">Randomized Valuelist Teststep</h3>
+<p>A Randomize Teststep reads a CSV-file to randomize your request input. The intention is the same as with the Randomize Teststeps except that the randomized data must fit together. See more in <a href="#randomized-valuelist-teststep-view">Randomized Valuelist Teststep View</a>. See the tutorial <a href="../task-create-valuelist-teststeps/#create-a-manual-randomizedvaluelist-teststep">Create a Manual RandomizedValuelist Teststep</a> in case you have not yet worked with this teststep type.</p>
+<h3 id="manual-randomized-valuelist-teststep">Manual Randomized Valuelist Teststep</h3>
+<p>A Randomize Teststep reads a CSV-file to randomize your request input. The intention is the same as with the Randomize Teststeps except that the randomized data must fit together. See more in <a href="#manual-randomized-valuelist-teststep">Manual Randomized Valuelist Teststep</a></p>
 <h1 id="html-teststep-view">HTML Teststep View</h1>
-<p>An HTML teststep loads a website and displays the contents in a browser window. This is helpful, when you test web services postprocesing. You may visually check the website content or create a list of Javascript-based assertions on the webpage.   </p>
 <p><img alt="HTMLTeststep overview" src="../storage/htmlteststepoverview.png" /></p>
 <hr />
-<h3 id="overview">Overview</h3>
+<h3 id="overview_1">Overview</h3>
 <p>An HTML teststep is a regular teststep in the teststep list. You need to provide an <strong>URL</strong> to load. The URL can be static or a variable value, as with SOAP teststeps or HTTP teststeps. You see an <strong>EnvironmentVariable</strong> In the address line of the <strong>WebView</strong> in  above screenshot and a selected <strong>RunEnvironment</strong> <em>APIStaging</em>,</p>
 <ul>
 <li>tab <strong>WebView</strong> contains the browser window with the content as it would appear in a Web browser like Safari</li>
@@ -816,7 +993,7 @@ Press this button to remove the selected elements. This has only an effect, if y
 You have request and response area with various that help you manage the complexity of SOAP-XML data models based on WSDL-XSD-Schema definition.
 Run your SOAP request and verify the response. You can view the HTTP header fields for request and response. A Soap Teststep is created based on  a WSDL operation either for a SOAP 1.1 or SOAP 1.2 WsdlService Port
 <img alt="SOAP Teststep editor screenshot" src="../storage/SOAPTeststepOverview.png" /></p>
-<h3 id="overview_1">Overview</h3>
+<h3 id="overview_2">Overview</h3>
 <p>The SOAP Teststep View provides a number of sub views and configuration options.</p>
 <ul>
 <li>Teststep configuration options that effects request and response handling.</li>
@@ -889,7 +1066,52 @@ This is often the case for existing requests where values only need to be variab
 </ul>
 <p>When you switch from your request editor to this tab, APIJockey TEST will reevaluate the variables and resolve these as it does when sending the request. Bear in mind that this is only a viewer. </p>
 <hr />
-<h2 id="assertions_1">Assertions</h2>
+<h1 id="randomize-teststep-view">Randomize Teststep View</h1>
+<p>A Randomize Teststep defines rules or data to randomize your request input.
+It holds a list of Random Value Providers of two types of random data</p>
+<ul>
+<li>String Random Value Provider and </li>
+<li>Location Random Value Provider</li>
+</ul>
+<p>The screenshot below shows a Randomize Teststep with two Random Value Providers of each of these types. You can have an arbitrary number of Random Value Providers in this teststep.
+<img alt="RandomizeTeststep Screnshot" src="../storage/RandomizeTeststep.png" /></p>
+<p>You see a RandomizeTeststep <strong>Locations</strong> selected in the Teststep list view. 
+The teststep holds three RandomValueProviders, two StringRandomValueProviders (VIN, numberplate) and one LocationRandomValueProvider (New York).
+The RandomValueProviders vend their random values through variables, which can be accessed within requests and assertions.</p>
+<h2 id="string-random-value-provider">String Random Value Provider</h2>
+<p>A StringRandomValueProvider defines a list of rules (StringRandomValueExpression) to create random strings. </p>
+<h3 id="string-random-value-provider-configuration">String Random Value Provider configuration</h3>
+<p>You can create an arbitrary number of random expression values which are simply concatenated from top to bottom.</p>
+<p><img alt="RandomizeTeststep Screnshot" src="../storage/StringRandomValueProvider.png" /></p>
+<ul>
+<li><strong>text</strong> adds a new string-based random expression value. You configure the characters to include and the text length. In case you need a fixed value to occur at a specific position, switch the <strong>value expression type</strong> from <strong>variable</strong> to <strong>fixed</strong>.</li>
+<li><strong>integer</strong> adds a new integer-based random expression value. You configure the min and max value and the formatting options.</li>
+<li><strong>decimal</strong> adds a new decimal-based random expression value, you configure the min and max value and the formatting options.</li>
+<li><strong>date</strong> adds a new calendar-based random expression value, you configure the earlist and latest allowed dates and the formattions options.</li>
+<li><strong>uuid</strong> adds a new UUID value provider.</li>
+<li><strong>rename</strong> your selected random value expression</li>
+<li><strong>delete</strong> your selected random value expressions</li>
+<li><strong>move up/down</strong> your selected random value expressions to change occurence in your final string</li>
+<li><strong>enable/disable</strong> your selected random value expressions</li>
+<li><strong>run</strong> evaluates your expressions and displays the <strong>current result</strong>. When a <strong>referenced variable</strong> is configured, the variable will hold the value for further use in requests and assertions.</li>
+</ul>
+<h3 id="example-stringrandomvalueprovider">Example StringRandomValueProvider</h3>
+<p>The <strong>VIN</strong> random text consists of a single StringRandomValueExpresion, which you can create with the <strong>text</strong> button.
+The <strong>number plate</strong> random text is more elaborate and shows the concatenation of three string random value expressions:</p>
+<p><img alt="Integer-based random value expression Screnshot" src="../storage/IntRandomValueProvider.png" /></p>
+<h2 id="location-random-value-provider">Location Random Value Provider</h2>
+<p>A location random value Provider provides you with a random adddress and geolocation coordinates from within a specified region. In the example screenshot below we have chosen an area in New York, specifically parts of Lower Manhatten/New Jersey and Brooklyn to get random location data:</p>
+<p><img alt="LocationRandomValueProvider Screnshot" src="../storage/LocationRandomValueProvider.png" /></p>
+<p>A Location Random Value Provider vends a set of data among which are:
+- geolocation coordinates
+- country
+- timezone
+- street / number
+- postal code
+- place
+- administrative area data</p>
+<p>Each of these fields can be accessed by a separate variable.</p>
+<h1 id="teststep-assertions">Teststep Assertions</h1>
 <p>Testing webservices can become repetitive and cumbersome. Assertions help you to automate checks and free you from repetitive error-prone verifications.
 You will find more time to further explore responses and find unexpected behaviour.
 Assertions have their own tab in the SOAP Request view and allow you for editing assertions while viewing the Response.</p>
@@ -916,7 +1138,7 @@ Assertions have their own tab in the SOAP Request view and allow you for editing
 <h1 id="view-datatransferteststep">View DatatransferTeststep</h1>
 <p>A Datatransfer teststep allows you to query results from SOAP teststeps (request and response) and store them in a variable. This is helpful in cases where you need
 to establish a set of requests where the input of a request is part of the response of the previous teststep..</p>
-<h3 id="overview_2">Overview</h3>
+<h3 id="overview_3">Overview</h3>
 <p>When you create and select Datatransfer Teststep in the <a href="../views-repositories-testsets/#teststep-list-view">Teststep list view</a>, the following editor appears.</p>
 <p><img alt="Datatransfer teststep Details screenshot" src="../storage/DatatransferteststepDetails.png" /></p>
 <ul>
@@ -1124,8 +1346,8 @@ A column that is shown has a different Icon that one that is not displayed.</li>
 <li><strong>delete selected row(s)</strong>will delete the selected rows <strong>without further warning!</strong></li>
 <li><strong>table rows</strong> show only columns with <strong>diplay</strong> equals true (see Column editor view)</li>
 </ul>
-<h1 id="randomizedvaluelist-teststep-view">Randomizedvaluelist Teststep View</h1>
-<p>A Randomizedvaluelist Teststep takes a table of values (CSV-File technically) and provides randomized values from this table in variables that can be used in web service requests. The purpose is to permutate request data to a maximum.
+<h1 id="randomized-valuelist-teststep-view">Randomized Valuelist Teststep View</h1>
+<p>A Randomized Valuelist Teststep takes a table of values (CSV-File technically) and provides randomized values from this table in variables that can be used in web service requests. The purpose is to permutate request data to a maximum.
 This helps to test efficiently webservices with a varying (even small) set of test data. A small number of data can thus provide more combinations when repeating a test.
 Repeating testcase without variation has only limited benefits. You would not test thoroughly and test all combinations of testcases is an endeavour that only few testers will continue to perform in the sense of regression testing.
 See <a href="../task-create-valuelist-teststeps/#create-a-randomizedvaluelist-teststep">Create a RandomizedValuelist Teststep</a> to add a new RandomizedValuelist Teststep for a testcase.</p>
@@ -1218,7 +1440,7 @@ You will find more time to further explore responses and find unexpected behavio
 Assertions have their own tab in the HTTP Request view and allow you for editing assertions while viewing the Response.</p>
 <p><img alt="Screenshot HTTP Teststep Assertion View" src="../storage/HTTPTeststepAssertionView.png" /></p>
 <hr />
-<h1 id="assertions_2">Assertions</h1>
+<h1 id="assertions_1">Assertions</h1>
 <p>Assertions help you to assess the validity of a teststeps output. APIJockey TEST provides a set of assertions types depending on the output type unter test.</p>
 <h2 id="assertion-list">Assertion list</h2>
 <p><img alt="HTTP teststep assertion list" src="../storage/HTTPAssertionListView.png" /></p>

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.apijockey.com/pasteboard/">
+        <link rel="canonical" href="https://docs.apijockey.com/servicedefinitions/">
       
       
-        <link rel="prev" href="../teststepconfigviews/">
+        <link rel="prev" href="../views-teststeps/">
       
       
-        <link rel="next" href="../collaborate/">
+        <link rel="next" href="../teststepconfigviews/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Copy and Paste - ApiJockey TEST Docs</title>
+        <title>Service Definitions - ApiJockey TEST Docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pasteboard-commands" class="md-skip">
+        <a href="#servicedefinitions" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Copy and Paste
+              Service Definitions
             
           </span>
         </div>
@@ -394,10 +394,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../servicedefinitions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -406,6 +415,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -436,19 +446,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pasteboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -457,7 +458,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -671,23 +671,30 @@
                   
 
 
-<h1 id="pasteboard-commands">Pasteboard commands</h1>
-<p>These command buttons are used in almost all list view.</p>
-<p><img alt="Pasteboard commands" src="../storage/commands-pasteboard.png" /> </p>
-<ul>
-<li>
-<p><strong>copy</strong> Copies your current selection to a common application pasteboard. This makes the selected elements available for paste operations on the same or any other parent element. With the paste operation, the selected elements are copied to the new parent and kept for the current parent element.- </p>
-</li>
-<li>
-<p><strong>cut</strong> Copies your current selection to a common application pasteboard. This makes the selected elements available for paste operations on the same or any other parent element. With the paste operation, the selected elements are moved to the new parent element.</p>
-</li>
-<li>
-<p><strong>paste</strong>  the elements to the new parent depending on the previous operation (cut,copy).</p>
-</li>
-<li>
-<p><strong>duplicate</strong> copies and pastes the selected elements to the current list.</p>
-</li>
-</ul>
+<h1 id="servicedefinitions">Servicedefinitions</h1>
+<p>the tab servicedefinitions holds information about 
+- WSDL service definitions and 
+- Manual servicedefinitions.</p>
+<h1 id="wsdl-service-definition">WSDL Service Definition</h1>
+<p>A WSDL contains information about SOAP Web services.
+When you work with SOAP Web services you you will need to know which operations and messages are available and what authentication is required.</p>
+<p>As WSDL service definition includes information in three tabs
+- Textview contains the WSDL itself with its definitions of services, operations, messages, ports, bindings and schema type information
+- Types lists all namespace schema files with their contents that are referenced by the WSDL file according to <strong>import</strong> or <strong>include</strong> elements or separate XSD-files doing so.
+- Samples lists all messages and allows you to create and maintain sample requests or responses for use in requests or when mocking web service responses, which you may want to perform in a third party solution.</p>
+<p>While the <strong>Textview</strong> and the <strong>Types</strong> tab are self-explaining, the Samples tab offers functionality that help you create requests by holding a list of predefined messages.</p>
+<h2 id="wsdl-service-definition-tab-samples">WSDL Service Definition Tab Samples</h2>
+<p><img alt="Screenshot WSDL Service Definition with Sample" src="../storage/WSDLServiceDefinitionTabSamples.png" /></p>
+<p>All WSDLs define services, ports, operations, messages and types. These define the data model of your requests and responses. </p>
+<p>Types may be defined in the WSDL-file itself or be referenced in separate schema files (XSD-files) that need to be taken into account when loading the WSDL itself, in general following an <strong>import</strong> or <strong>include</strong> element. You would find these XSD files in the <strong>Types</strong> tab.</p>
+<p>The tab holds a list of messages defined in the WSDL file. When you select a message, you can create samples with a <strong>sample title</strong>. Right to you list, you can edit your message. For requests this will be the corresponding request message. </p>
+<p>If you don't want to start from scratch <strong>create from WSDL definition</strong> will read the WSDL information and help you getting started.</p>
+<p>The Button <strong>validate</strong> will trigger assertion of the current sample content against the wsdl, in case errors these are displayed in the <strong>validation error list</strong>.</p>
+<p>When you create a SOAP request, you will be prompted for the <strong>SOAP Operation</strong> that you want to test. In case you have defined a Sample for the SOAP Operation Input message, these are listed side-by-side with the operation. 
+Selecting on would copy the sample content in the request. </p>
+<h1 id="manual-service-definition">Manual Service Definition</h1>
+<p>When you want to work with HTTP Teststeps and configure different run environment servicedefinition information such as authentication and URLs you may create a manual service definition.</p>
+<p>This service definition can be referenced in the tab <strong>Run Environment</strong>.</p>
 
 
 
