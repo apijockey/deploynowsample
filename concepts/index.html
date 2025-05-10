@@ -728,13 +728,13 @@
 
 
 <h1 id="apijockey-test-concepts">APIJockey TEST concepts</h1>
-<p>APIJockey TEST is a test application. It's primary purpose is to test webservices. Webservices have been around for a long time now, starting with SOAP whereas current implementations focus on JSON-based implmentations with or withour a REST architecture.
-Testing web services is not an easy task, there is no user interface, there is no backing process, data models use keys and reference ids. Creating valid requests is time-consuming and verifying responses is evenharder.
-APIJockey TEST will help you create requests, assess and verify web services responses and automate this assessment to a certain degree.
+<p>APIJockey TEST is a webservice test application. Webservices have been around for a long time now, starting with SOAP whereas current implementations focus on JSON-based implementations with or without a REST architecture.
+Testing web services isnt' an easy task, there is no user interface, there are no visualizable business processes, data models are based on technical structures, use keys and reference ids. Creating valid requests is time-consuming and verifying responses is even harder.
+APIJockey TEST will help you to create requests, assess and verify web services responses and automate this assessment to a certain degree.
 All information is stored in a SQLite database and backed by iCloud integration, which ensures you can access your data from different MacOS &reg; computers.</p>
 <ol>
 <li>instant test runs</li>
-<li>Persisted Test executions</li>
+<li>persisted test executions</li>
 </ol>
 <h2 id="instant-test-runs">Instant test runs</h2>
 <p>This test is available on all four test definition hierarchies.</p>
@@ -748,17 +748,17 @@ All information is stored in a SQLite database and backed by iCloud integration,
 A result status icon provides visible information of the test result status.</p>
 <p><img alt="visualization test run results for teststeps" src="../storage/concepts-teststeplist-testrunresult.png" /></p>
 <p><em>Above: screenshot of the teststep action buttons with test run result icon</em></p>
-<h1 id="test-executions">Test executions</h1>
+<h1 id="persisted-test-executions">Persisted test executions</h1>
 <p>Test executions are persisted test runs. They can be started from the repository or testset list view and perform basically the same test operations as an instant test run. The difference is that the test execution results are persisted and can be accessed at any point in time. This gives you a great opportunity to get back to previous runs and compare requests and responses.</p>
 <p><img alt="conceptual testexecution overview" src="../storage/concepts-testexecution-overview.png" /></p>
 <p><em>Above: screenshot of the test execution view</em> 
 When you select a test execution, you will see the list of testcase executions and teststeps execution, drilled down to each indivudal Random and Teststep Value Provider output value.</p>
 <h2 id="test-definition">Test definition</h2>
-<p>APIJockey TEST to organize tests in a <a href="../views-repositories-testsets/">test definition hierarchy</a>.
+<p>APIJockey TEST organizes tests in a <a href="../views-repositories-testsets/">test definition hierarchy</a>.
 A test definition describes a test case with its test steps and the assertions defined on the teststeps.
 That means, a test case can be passed in a test run only, when all teststeps can be run through and all assertions have passed.</p>
 <h2 id="repository">Repository</h2>
-<p>First step in the test definition is the creation of a repository. You can create as many repositories as you want. A Repository contains a structure of test cases AND you can execute the contained testcases.Repositories are intended to support several container types, although APIJockey TEST currently supports one local SQLLite (technically CoreData) database, only. They help you group your tests and support persisted test executions.</p>
+<p>First step in the test definition is the creation of a repository. You can create as many repositories as you want. A Repository contains a structure of test cases AND you can execute the contained testcases.Repositories are intended to support several container types, although APIJockey TEST currently supports one local SQLLite (specifically CoreData© an Apple product) database, only. They help you group your tests and support persisted test executions.</p>
 <p>See, how to <a href="../task-create-testdefinition/#create-a-test-definition-hierarchy">create a test definition</a> 
 Organize your repostories in the <a href="../views-repositories-testsets/#repository-list-view">Repository list view</a></p>
 <h2 id="testset">Testset</h2>
@@ -908,7 +908,7 @@ The following sample demonstrate a set of  web service  eststeps, together with 
 <p><strong>absolute Date</strong> Enter a static date to reproduce tests. The Variable Editor provides a convenient means to enter the date and formatting for the service call.</p>
 </li>
 <li>
-<p><strong>relative Date</strong> Creates a date relative to the current date. On Test runs, this relative is <strong>re-evaluated</strong> .This allows you to enter a date of birth or a date of manufacturing and make sure the webservice under test will always calculate the same age.</li></p>
+<p><strong>relative Date</strong> Creates a date relative to the current date. On Test runs, this relative is <strong>re-evaluated</strong> .This allows you to enter a date of birth or a date of manufacturing and make sure the webservice under test will always calculate the same age.</p>
 </li>
 <li>
 <p><strong>Number</strong>  Numbers need specific formatting. This formatting is provided for variables of type number</p>
@@ -929,13 +929,13 @@ The following sample demonstrate a set of  web service  eststeps, together with 
 </ul>
 <h2 id="access-variable-values">Access Variable values</h2>
 <p>Variable placeholders are simply substituted by their current values, just like a makro.
-  Variable values can be used in these contexts:</p></p>
+  Variable values can be used in these contexts:</p>
 <ul>
 <li>
 <p>SOAP/HTTP Requests</p>
 </li>
 <li>
-<p>URLs of the SOAP Request</li></p>
+<p>URLs of the SOAP Request</p>
 </li>
 <li>
 <p>XPath expression for Assertions and ValueProviders</p>
@@ -992,6 +992,34 @@ XQuery allows for arbitrary transformations of request and response data, so if 
 XPath, XQuery and JSONPath can be used within <cite>DatatransferValueProviders</cite>, which in turn are part of Datatransferteststeps.</p>
 <h2 id="random-data">Random Data</h2>
 <p>APIJockey TEST provides a Randomteststep that allows for randomized data. You can create a list of random value providers without any coding. Typical examples are number plates or Vehicle Identification numbers where you may use a calculated String to create the random value. In the request, this is just a variable as above.</p>
+<h1 id="help">Help</h1>
+<p>APIJockey Test provides two sources of help</p>
+<ul>
+<li>
+<p>a searchable online help (this help) <a href="https://docs.apijockey.com">https://docs.apijockey.com</a></p>
+</li>
+<li>
+<p>searchable webservice definitions (WSDL only, from Release 1.7.3)</p>
+</li>
+</ul>
+<h2 id="sample-searchable-webservice-definitions">Sample searchable webservice definitions</h2>
+<p><strong>Legal Note</strong> : The url and the webservice presented below have been provided by oorsprong.org and have been available without authentication. I use these resources for the only reason to illustrate the contextual help feature of APIJockey TEST. Do not misunderstand this as any kind of endorsement for and from oorsprong.org.
+The request itself has been created with the built-in functionality of APIJockey TEST to create a sample from a WSDL.</p>
+<p>Let's assume a sample request created from the WSDL. 
+<img alt="sample request" src="../storage/countryinfoservice-barerequest.png" /></p>
+<p>When working with these APIs, you would probably search the XSD-files for more information.</p>
+<p>In such a case drag with your mouse the element name that you need information about while holding the CMD-key</p>
+<p><img alt="sample request with contextual help" src="../storage/countryinforservice-searchwindow.png" /></p>
+<p>If you want to search for elements or types not present in the current request or response hold the CMD key while you double click with your mouse.</p>
+<p>Be aware that for processing search with namespace prefixes, the search must be able to locate the correponding XSD-file. This is only possible, if the prefix is defined in the namespace definitions and you hold a valid XML document. If this is not the case, you can search for an element or type in a specific namespace with this notation:</p>
+<ul>
+<li>
+<p><strong>{http://my.namespace.com/context}Elementname</strong></p>
+</li>
+<li>
+<p><strong>{http://my.namespace.com/context}Typename</strong></p>
+</li>
+</ul>
 
 
 

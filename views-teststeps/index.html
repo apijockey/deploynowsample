@@ -857,7 +857,7 @@
 <p>An HTML teststep loads a website and displays the contents in a browser window. This is helpful, when you test web services postprocesing. You may visually check the website content or create a list of Javascript-based assertions on the webpage. See more in <a href="#html-teststep-view">HTML Teststep View</a>   </p>
 <h3 id="soap-teststep">SOAP Teststep</h3>
 <p>A SOAP Teststep is a WSDL-aware teststep that reference a specific webservice method.
-You have request and response area with various that help you manage the complexity of SOAP-XML data models based on WSDL-XSD-Schema definition. See more in <a href="#soap-teststep-view">SOAP Teststep View</a> </p>
+You have request and response area with various that help you manage the complexity of SOAP-XML data models based on WSDL-XSD-Schema definition. See more in <a href="#soap-teststep-view">SOAP Teststep View</a>. SOAP teststeps support WSDL quick search and context sensitive help.</p>
 <h3 id="randomize-teststep">Randomize Teststep</h3>
 <p>A Randomize Teststep defines rules or data to randomize your request input. This is a common strategy in testing to have variants of you request to make sure you'll find gaps in the implementation. A common pitfall in webservice testing is to rely on a small set of regression tests with a static set of input data. 
 The Randomize Teststep includes a list of Random Value Providers to serve random data, like <strong>random strings</strong> and <strong>random locations</strong>. See more in <a href="#randomize-teststep-view">Randomize Teststep View</a>. See the tutorial <a href="../task-create-valuelist-teststeps/#create-a-randomize-teststep-with-a-random-value-provider">Create a Randomize Teststep with a Random Value Provider</a> to learn how to this teststep to create a random <em>Vehicle Identifier Number</em>.</p>
@@ -1136,17 +1136,23 @@ Assertions have their own tab in the SOAP Request view and allow you for editing
 <h3 id="url-request-header">URL request header</h3>
 <p>This tab displays the HTTP header used with the last URL request and may be empty if no request has been sent after (re-)starting APIJockey TEST.</p>
 <h1 id="view-datatransferteststep">View DatatransferTeststep</h1>
-<p>A Datatransfer teststep allows you to query results from SOAP teststeps (request and response) and store them in a variable. This is helpful in cases where you need
-to establish a set of requests where the input of a request is part of the response of the previous teststep..</p>
+<p>A Datatransfer teststep allows you to query results from  teststeps in the current testcase and store them in a variable. This is helpful in cases where you need to establish a set of requests where the input of a request is part of the response of the previous teststep.
+The Datatransfer Teststep defines a number of different ValueProviders, all of which expect a String expression as query result to store in a variable.</p>
 <h3 id="overview_3">Overview</h3>
 <p>When you create and select Datatransfer Teststep in the <a href="../views-repositories-testsets/#teststep-list-view">Teststep list view</a>, the following editor appears.</p>
 <p><img alt="Datatransfer teststep Details screenshot" src="../storage/DatatransferteststepDetails.png" /></p>
 <ul>
 <li>
-<p><strong>create new XPath expression</strong> opens a dialog to create an xpath expression to query data from a previous teststep (request or response) in this testcase..</p>
+<p><strong>create new Javascript expression</strong> opens a dialog that creates a <strong>Javascript ValueProvider</strong> to query data from a HTML teststep in this testcase.</p>
 </li>
 <li>
-<p><strong>create new XQuery expression</strong> opens a dialog to create an xpath expression to query data from a previous teststep (request or response) in this testcase. Note that you will use XPath in XQuery as well, so depending on your use case, XQuery may be the choice..</p>
+<p><strong>create new JSONpath expression</strong> opens a dialog to create an <strong>JSONPath ValueProvider</strong> to query data from a previous HTTP Teststep (request or response) in this testcase.      </p>
+</li>
+<li>
+<p><strong>create new XPath expression</strong> opens a dialog to create an xpath expression to query data from a previous teststep (request or response) in this testcase.</p>
+</li>
+<li>
+<p><strong>create new XQuery expression</strong> opens a dialog to create an xpath expression to query data from a previous teststep (request or response) in this testcase. Note that you will use XPath in XQuery as well, so depending on your use case, XQuery may be the choice.</p>
 </li>
 <li>
 <p><strong>delete</strong> the selected datatransfers</p>
@@ -1171,6 +1177,14 @@ to establish a set of requests where the input of a request is part of the respo
 </li>
 </ul>
 <hr />
+<h3 id="javascript-valueprovider">Javascript ValueProvider</h3>
+<p>When you want to query HTML content from a HTML Teststep, this value provider allows to enter a Javascript expression that returns a string value. </p>
+<h3 id="jsonpath-valueprovider">JSONPath ValueProvider</h3>
+<p>When you want to query JSON structures from a HTTP Teststep, this value provider allows to enter a JSONPath expression that returns a string value from the request or response.</p>
+<h3 id="xpath-valueprovider">XPath ValueProvider</h3>
+<p>When you want to query XML/SOAP structures from a HTTP or SOAP Teststep, this value provider allows to enter an XPath 1 expression that returns a string value from the request or response. You can also use the built-in treeview to create the XPath expression</p>
+<h3 id="xquery-valueprovider">XQuery ValueProvider</h3>
+<p>When you want to query XML/SOAP structures from a HTTP or SOAP Teststep, this value provider allows to enter a XQuery 1 expression that returns a string value from the request or response. You can also use the built-in treeview to create the XPath expression</p>
 <h3 id="walkthrough-to-create-an-xpath-datatransfer">Walkthrough to create an XPath datatransfer</h3>
 <p>We will create an XPath datatransfer (value provider) with a namespace-aware XPath expression. Be aware that we will use the <strong>request</strong> for this XPath expression. In general, you may use the <strong>response</strong> for your query.
 To make this work, you need to walk through our <a href="../gettingstarted/">getting started tutorial</a>. Once you are done, you need to change the request as follows:
