@@ -1,0 +1,934 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.apijockey.com/views-repositories-testsets/">
+      
+      
+        <link rel="prev" href="../conceptual-runenvironment/">
+      
+      
+        <link rel="next" href="../views-teststeps/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Test hierarchy views - ApiJockey TEST Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#testdefinition-hierarchy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ApiJockey TEST Docs" class="md-header__button md-logo" aria-label="ApiJockey TEST Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ApiJockey TEST Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Test hierarchy views
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ApiJockey TEST Docs" class="md-nav__button md-logo" aria-label="ApiJockey TEST Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ApiJockey TEST Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conceptual-databasedTestcase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data based test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conceptual-runenvironment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Test hierarchy views
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views-teststeps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teststep views
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../servicedefinitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Service Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teststepconfigviews/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration views and editors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pasteboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copy and Paste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collaborate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collaborate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenotes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task-create-testdefinition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create your first tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task-createdatabasedtestcase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create databased testcase
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task-create-valuelist-teststeps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random test data support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="testdefinition-hierarchy">Testdefinition hierarchy</h1>
+<p>You manage and maintain your test definition hierarchy in four views, where two of them are located inthe sidebar:</p>
+<p><img alt="Screenshot sidebar test definition&quot;" src="../storage/SidebarTestdefinition.png" /></p>
+<p>The sidebar includes two followinglist view:</p>
+<ul>
+<li>
+<p>Repository list view</p>
+</li>
+<li>
+<p>Testset list view</p>
+</li>
+</ul>
+<p>The sidebar appearance can be changed with the following toggles</p>
+<ul>
+<li>
+<p><strong>Show/hide sidebar</strong></p>
+</li>
+<li>
+<p><strong>Show Testsets</strong> on: will show the <a href="#testset-list-view">Testsets List View</a>, off: will not display them.</p>
+</li>
+</ul>
+<h1 id="repository-list-view">Repository list view</h1>
+<p>A repository is an organizational bucket where you can enter your testsets and testcases. All your definitions are synchronized on your iCloud storage across your MacOS-devices.</p>
+<p>This view displays all repositories and provides commands to create, edit, delete and test run commands.
+This view is intended to edit in the repository list or run a repository-based test and view the unterlying testsets at the same time. You
+Commands illustrated on the left side from top to down without the view toggle commented in the previous section</p>
+<p><img alt="Repository List View&quot;" src="../storage/Repositorylistview.png" /></p>
+<p>We follow the icons from left to right and list the views from top to down.</p>
+<ul>
+<li>
+<p><strong>Create new repository</strong> adds a new repository</p>
+</li>
+<li>
+<p><strong>enable/disable repository for test run</strong> includes or excludes a repository for test run or execution run</p>
+</li>
+<li>
+<p><strong>Delete all selected repositories</strong> performs the deletion</p>
+</li>
+<li>
+<p><strong>Edit repository name</strong> allows to rename a single selected repository</p>
+</li>
+<li>
+<p><strong>move repository up</strong> and <strong>move repository down</strong> has impact on the list order and on the order they are invoked for test runs and execution runs</p>
+</li>
+<li>
+<p><strong>instant run tests in repository</strong> starts a test run that walks through alls testsets and their testcase in the order they are displayed in the list views. </p>
+</li>
+<li>
+<p><strong>run test execution for repository</strong> starts a test run whose results are persisted and visible. See <a href="../concepts/">Test run</a>.This starts a background test run that walks through alls testsets and their testcase in the order they are displayed in the list views. </p>
+</li>
+<li>
+<p><strong>instant test run status for repository</strong> and <strong>instant test run status for testset</strong> show the <strong>instant test run status</strong>. The test results are not persisted.</p>
+</li>
+<li>
+<p><strong>Search input field</strong> filters the repositories based on the input - input must be contained, case insensitive</p>
+</li>
+<li>
+<p><strong>selected repository</strong> defines the root element for the <strong>Testset List View</strong></p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+<hr />
+<h1 id="testset-list-view">Testset list view</h1>
+<p>The Testset list view is only visible, if the toggle <strong>Show testsets</strong> is activated</p>
+<p>Repositories contain Testsets. They are represented in the view above with a folder icon. All command that you can perform on testsets are available through a context menu.</p>
+<p><img alt="Testset list view" src="../storage/Testsetlistview.png" /></p>
+<ul>
+<li>
+<p><strong>Create new Testset</strong> will open a dialog to create a new Testset</p>
+</li>
+<li>
+<p><strong>Delete all selected X testset(s)</strong> will prompt you to perform the <strong>undoable</strong> deletion.</p>
+</li>
+<li>
+<p><strong>Rename selected Testset</strong> will open a dialog to enter the new name.</p>
+</li>
+<li>
+<p><strong>export selected Testsets to JSON-file</strong> will create a JSON-representation of the Testset list with all underlying data. See <a href="../collaborate/">Import and Export your Test definitions</a>.</p>
+</li>
+<li>
+<p><strong>import Testsets from JSON-file</strong> will create new Testsets from a JSON-representation with all underlying data.
+see <a href="../collaborate/">Import and Export your Test definitions</a></p>
+</li>
+<li>
+<p><strong>Toggle enabled/disabled for test run</strong>  includes or excludes a Testset for a test run.</p>
+</li>
+<li>
+<p><strong>Instantly run Testsets</strong>  starts a test run that walks through the testcases of the selected testset in the order they are displayed in the list views. The results are not persisted.</p>
+</li>
+<li>
+<p><strong>instant test run status</strong> for repository and <strong>instant test run status for testset</strong>  show the <strong>instant test run status</strong>. The test results are not persisted.</p>
+</li>
+<li>
+<p><strong>move selected Testset(s) up</strong> will change the order in th Testset list.</p>
+</li>
+<li>
+<p><strong>move selected Testset(s) down</strong>  will change the order in th Testset list.</p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+<h1 id="testcase-list-view">Testcase list view</h1>
+<p>This view displays the testcases of the selected testset</p>
+<p><img alt="Testcase list view" src="../storage/Testcaselistview.png" /></p>
+<p>A testcase includes a number of tetsteps to test a specific functionality.</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li>
+<p><strong>Name of parent repository</strong> displays the current repository selection</p>
+</li>
+<li>
+<p><strong>Name of parent testset</strong> displays the current testset selection</p>
+</li>
+<li>
+<p><strong>create new data-based testcase</strong> sets up a base testcase with an input data teststep and a result teststep</p>
+</li>
+<li>
+<p><strong>create new testcase</strong></p>
+</li>
+<li>
+<p><strong>delete</strong> all selected testcases</p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+<h2 id="special-considerations">Special considerations</h2>
+<p>Each testcase is displayed with an <strong>icon</strong> leading its <strong>name</strong>. An icon with a dark fill color indicates a testcase with teststeps included, an icon without fill color indicates an empty testcase
+-  <strong>move up</strong> and <strong>move down</strong> has impact on the list order and on the order they are invoked for test runs. The order is intended to help you organize your testcases.</p>
+<ul>
+<li>
+<p><strong>enable/disable</strong> includes or excludes a testcase on a test run</p>
+</li>
+<li>
+<p><strong>run test</strong> starts a test run that walks through all selected testcases in the displayed order, or all testcases, when no testcase is selected.</p>
+</li>
+<li>
+<p><strong>testcase list testrun result status</strong> displays the aggregrated test run result status of all executed testcases.</p>
+</li>
+<li>
+<p><strong>testcase testrun result status</strong> displays the test run result status of an individual testcase.</p>
+</li>
+<li>
+<p><strong>import testcases from JSON</strong> loads testcase information from a JSON file</p>
+</li>
+<li>
+<p><strong>export selected testcases as JSON</strong> creates a JSON representation of the selected testcases and stores them to a file</p>
+</li>
+<li>
+<p><strong>rename</strong> selected testcase</p>
+</li>
+</ul>
+<h1 id="teststep-list-view">Teststep list view</h1>
+<p>This view displays the teststeps of the selected testcase</p>
+<p><img alt="Teststep list view" src="../storage/Teststeplistview.png" /></p>
+<p>A teststep performs - depending on the teststep type a type-specific task within a testcase.</p>
+<h3 id="commands_1">Commands</h3>
+<ul>
+<li>
+<p><strong>Create SOAP Teststep</strong> opens a dialog to specify the WSDL and the operation that you want to test. See tutorial <a href="../task-create-testdefinition/#create-a-soap-teststep">Create SOAP Teststep</a></p>
+</li>
+<li>
+<p><strong>Create HTTP Teststep</strong> creates a teststep for HTTP requests including JSON body. See tutorial <a href="../task-create-testdefinition/#create-an-http-teststep">Create HTTP Teststep</a></p>
+</li>
+<li>
+<p><strong>Create Datatransfer Teststep</strong> creates a teststep with an empty list of Teststep value providers such as XPath and XQuery value providers. See <a href="../teststepconfigviews/#datatransfer-teststep">Datatransfer Teststep</a></p>
+</li>
+<li>
+<p><strong>Create RandomizeTeststep</strong> creates a teststep with an empty list of random value providers based on concatenated strings or uuids. See <a href="../views-teststeps/#view-randomizeteststep">View Randomizeteststep</a></p>
+</li>
+<li>
+<p><strong>Create Randomized ValuelistTeststep</strong> creates a teststep that reads a CSV file and allows to configure output columns and their formatting. See <a href="../views-teststeps/#randomized-valuelist-teststep-view">Randomizedvaluelist Teststep View</a>.</p>
+</li>
+<li>
+<p><strong>Create Manual Randomized ValuelistTeststep</strong> creates a teststep that let you edit a table and allows to configure output columns and their formatting. see <a href="../views-teststeps/#manual-randomizedvaluelistteststep-view">Manual RandomizedvaluelistTeststep View</a>.</p>
+</li>
+<li>
+<p>Each Teststep type is displayed with its name and a specific <strong>icon</strong> to distinguish the <strong>teststep type.</strong></p>
+</li>
+<li>
+<p><strong>delete</strong> all selected teststeps</p>
+</li>
+<li>
+<p><strong>rename</strong> selected teststep</p>
+</li>
+<li>
+<p><strong>move up</strong> and <strong>move down</strong> has impact on the list order and on the order they are invoked for test runs. The order is intended to define which teststep needs the input of another teststep.</p>
+</li>
+<li>
+<p><strong>enable/disable</strong> includes or excludes a teststep on a test run</p>
+</li>
+<li>
+<p><strong>run test</strong> starts a test run that walks through all selected teststep in the displayed order, or all teststeps, when no teststep is selected.</p>
+</li>
+<li>
+<p><strong>teststep list testrun result status</strong> displays the aggregrated test run result status of all executed teststeps.</p>
+</li>
+<li>
+<p><strong>teststep testrun result status</strong> displays the test run result status of an individual teststep.</p>
+</li>
+<li>
+<p>Documentation of the <a href="../pasteboard/">Pasteboard commands</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
