@@ -1,63 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.apijockey.com/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/collaborate/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/applicationoverview/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/concepts/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/assertions/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/conceptual-databasedTestcase/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/collaborate/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/conceptual-runenvironment/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/concepts/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/gettingstarted/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/conceptual-databasedTestcase/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/pasteboard/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/featurelist/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/releasenotes/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/gettingstarted/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/servicedefinitions/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/installationprocess/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/task-create-testdefinition/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/releasenotes/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/task-create-valuelist-teststeps/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/repositories/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/task-createdatabasedtestcase/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/runenvironment/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/teststepconfigviews/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/servicedefinitions/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/views-repositories-testsets/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/task-create-httpteststep/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.apijockey.com/views-teststeps/</loc>
-         <lastmod>2025-05-12</lastmod>
+         <loc>https://docs.apijockey.com/test/task-create-testdefinition/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/task-create-valuelist-teststeps/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/task-createdatabasedtestcase/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/testcases/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/testsets/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-datatransfer/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-html/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-http/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-manualrandomizedvaluelist/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-overview/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-randomize/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-randomizedvaluelist/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps-soap/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/teststeps/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.apijockey.com/test/variables/</loc>
+         <lastmod>2025-11-26</lastmod>
     </url>
 </urlset>
