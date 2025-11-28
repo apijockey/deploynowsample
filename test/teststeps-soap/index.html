@@ -1190,6 +1190,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#soap-request-edit-and-validation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP Request edit and validation support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tab-request-with-variables" class="md-nav__link">
     <span class="md-ellipsis">
       Tab Request with variables
@@ -1392,6 +1401,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#soap-request-edit-and-validation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP Request edit and validation support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tab-request-with-variables" class="md-nav__link">
     <span class="md-ellipsis">
       Tab Request with variables
@@ -1550,6 +1568,16 @@ When you click on the <strong>binocular</strong> button, you will get a dialog w
 <li><strong>Assertions</strong> based on simplified XPath that assert occurrences of specified elements. Details see below</li>
 <li><strong>Attachments</strong> allow for selection and preview of documents that you want to send with your request.</li>
 <li><strong>URLRequest Details</strong> displays the HTTP headers used to create the request.</li>
+</ul>
+<h3 id="soap-request-edit-and-validation-support">SOAP Request edit and validation support</h3>
+<p>Soap Requests need to be schema-compliant, which implicates elements to be in the right order with the right contents. XSD-Schema help you out here, but they can be nested and sometimes they are hard to read.</p>
+<p>SOAP Teststeps are created by referencing a <strong>WSDL</strong>, <strong>SOAP operation</strong> and <strong>SOAP version</strong>. This is a prerequisite for any of the next items:</p>
+<ul>
+<li><strong>generate request</strong> provides a tree of elements as a starting point for your request.</li>
+<li><strong>validate</strong> returns the result of the validation against the <strong>WSDL</strong> and <strong>operation</strong> that you have selected in the first step.</li>
+<li>You have contextual help with CMD-drag on any element ot type in your request editor (try it out)</li>
+<li><strong>pretty print</strong> to improve readability</li>
+<li>Click the <strong>open new window</strong> button on the toolbar, to open a second window. Here you can switch to the <strong>Service Definition</strong> section and navigate to the <strong>WSDL</strong> with its <strong>XSD Schemas</strong>  to see the namespace declaration and the request window.  </li>
 </ul>
 <h3 id="tab-request-with-variables">Tab Request with variables</h3>
 <ul>
